@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Главная - Nous</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./font/fontawesome/css/all.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick-theme.css">
+        <link rel="stylesheet" href="./js/libs/selectric/selectric.css">
+        <link rel="stylesheet" href="./js/libs/selectric/theme.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/add.css">
+    </head>
+    <body>
+        <!-- Preloader-->
+        <div class="loader">
+            <div class="loader__block"></div>
+        </div>
+        <!-- Header-->
+        <header class="header header--main">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div>
+                        <div class="header__logo"><a href="#!">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 207.2 59.7">
+                                            <g>
+                                                <path d="M0 59.7V20C0 14.5 2 9.8 5.9 5.9 9.8 2 14.5 0 20 0s10.3 2 14.2 5.9c3.9 3.9 5.9 8.6 5.9 14.2v35.5l-8.5 4.1V20.2c-.1-3.3-1.2-6-3.4-8.2-2.3-2.2-5-3.4-8-3.4-3.2 0-5.9 1.1-8.3 3.4-2.3 2.2-3.4 4.9-3.4 8v35.5L0 59.7zM134.9 51c3 0 5.6-1.1 7.8-3.4 2.2-2.2 3.4-4.9 3.4-8V4.1l8.5-4.1v39.6c0 5.5-2 10.3-5.9 14.2-3.9 3.9-8.6 5.9-14.2 5.9-5.5 0-10.3-2-14.2-5.9-3.9-3.9-5.9-8.6-5.9-14.2V19.5l8.5-4.1v24.1c.1 3.3 1.2 6 3.4 8.2 2.3 2.2 5.2 3.3 8.6 3.3zM187.8 51c3.2 0 5.8-1.1 7.8-3.2 2.1-2.2 3.1-4.6 3.1-7.3 0-2.4-1-4.6-3.1-6.8-2.1-2.1-4.9-3.3-8.5-3.5-4.4-.2-7.9-1.5-10.5-4-2.5-2.4-4-5.8-4.5-10.2 0-.3-.1-.6-.1-1 .2-3.9 1.7-7.3 4.7-10.3 3-3.2 6.7-4.7 11-4.7 4.6 0 8.3 1.6 11 4.7 1.8 2.1 3.2 4.8 4.2 8.1-1 .5-7.6 3.7-7.6 3.7-.6-2.3-1.4-4.2-2.6-5.6-1.3-1.5-3-2.2-5.1-2.2-2 0-3.7.7-5.1 2.2-1.3 1.4-2 2.9-2 4.6v.3c0 1.7.6 3.2 1.9 4.4 1.2 1.2 2.9 1.9 5.1 2.1 6.2.7 10.9 2.6 14.2 5.7 3.6 3.5 5.4 7.7 5.4 12.7v.3c-.1 4.8-1.8 9-5.3 12.8-3.6 3.9-8.3 5.9-14.2 5.9-5.6 0-10.2-1.9-13.7-5.8-4-4.2-6.2-9.1-6.4-14.4l8.5-4.1.1 4.1c0 3.3 1.2 6 3.4 8.2 2.3 2.2 5 3.3 8.3 3.3zM65.7 34.8V19.9c0-3 1.2-5.7 3.4-7.9s4.8-3.4 7.8-3.4c3.4 0 6.2 1.1 8.5 3.4 2.2 2.2 3.3 4.9 3.4 8.2v3.4l8.5-4.1c-.1-5.3-2.1-9.9-5.9-13.7C87.5 2 82.8 0 77.2 0 71.7 0 67 2 63.1 5.9c-3.9 3.9-5.9 8.6-5.9 14.2v18.8l8.5-4.1zM88.8 32.1v7.3c-.1 3.3-1.2 6-3.4 8.2-2.3 2.2-4.9 3.4-7.9 3.4-3.1 0-5.8-1.1-8.3-3.4-1.4-1.3-2.4-2.9-3-4.6l-7.8 3.7c1 2.6 2.5 4.9 4.6 7 3.9 3.9 8.6 5.9 14.2 5.9 5.5 0 10.3-2 14.2-5.9 3.9-3.9 5.9-8.6 5.9-14.2V28.1l-8.5 4z"></path>
+                                            </g>
+                                        </svg></a></div>
+                    </div>
+                    <div>
+                        <button type="button" class="header__mobile hamburger hamburger--spin js-hamburger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </button>
+                        <nav class="header__navigation">
+                            <ul class="menu__ul1">
+                                <li class="menu__li1"><a href="#!" class="menu__a1">Продукты<i class="fas fa-chevron-down"></i></a>
+                                    <div class="menu__div2 menu__div2--1">
+                                        <div class="menu__div2-wrapper">
+                                            <ul class="menu__ul2">
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category1.png" class="menu__a2">Смартфоны</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-categoryXiaomi.png" class="menu__a2">Смартфоны Xiaomi</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category2.png" class="menu__a2">Защищенные телефоны</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category3.png" class="menu__a2">Телефоны с кнопкой SOS</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category4.png" class="menu__a2">Аксессуары</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category5.png" class="menu__a2">Запасные части</a></li>
+                                            </ul><img src="" alt="" class="menu__img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__li1"><a href="#!" class="menu__a1">О нас</a></li>
+                                <li class="menu__li1"><a href="#!" class="menu__a1">Поддержка<i class="fas fa-chevron-down"></i></a>
+                                    <div class="menu__div2 menu__div2--2">
+                                        <div class="menu__div2-wrapper">
+                                            <ul class="menu__ul2">
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category1.png" class="menu__a2">Гарантийные условия</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category2.png" class="menu__a2">Сервисное обслуживание</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category3.png" class="menu__a2">Загрузки</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category4.png" class="menu__a2">Возврат товара</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category5.png" class="menu__a2">Доставка и оплата</a></li>
+                                            </ul><img src="" alt="" class="menu__img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__li1"><a href="#!" class="menu__a1">Компания<i class="fas fa-chevron-down"></i></a>
+                                    <div class="menu__div2 menu__div2--3">
+                                        <div class="menu__div2-wrapper">
+                                            <ul class="menu__ul2">
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li3-category1.png" class="menu__a2">Новости</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li3-category2.png" class="menu__a2">Акции</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li3-category3.png" class="menu__a2">Контакты</a></li>
+                                            </ul><img src="" alt="" class="menu__img">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="header__cart"><a href="#!" class="header__cart-top"><i class="fas fa-shopping-cart"></i><span>1</span></a>
+                            <div class="header__cart-popup">
+                                <div class="header__cart-title">Ваша корзина
+                                    <div class="header__cart-close"><i class="fas fa-times"></i></div>
+                                </div>
+                                <div class="header__cart-body">
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cart-total">Общая сумма: <strong>3 398 грн</strong></div>
+                                <div class="header__cart-footer"><a href="#!" class="btn btn--border">Перейти в корзину</a><a href="#!" class="btn btn--border">Оформить заказ</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menu__mobile">
+                    <div class="menu__mobile-wrapper">
+                        <ul>
+                            <li><a href="#!">Продукты</a></li>
+                            <li><a href="#!">Смартфоны NOUS</a></li>
+                            <li><a href="#!">Смартфоны Xiaomi </a></li>
+                            <li><a href="#!">Смартфоны Doogee </a></li>
+                            <li><a href="#!">О нас</a></li>
+                            <li><a href="#!">Гарантийные условия</a></li>
+                            <li><a href="#!">Возврат товара</a></li>
+                            <li><a href="#!">Доставка и оплата</a></li>
+                            <li><a href="#!">Акции</a></li>
+                            <li><a href="#!">Контакты </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="shadow-background"></div>
+        <div class="main-sliderTop">
+            <div>
+                <div class="main-sliderTop__block">
+                    <div class="main-sliderTop__img"><img src="./img/main-slider/banner-1920x980-1.jpg" alt=""></div>
+                    <div class="main-sliderTop__content">
+                        <div class="main-slider__title">Nous Optimum NS5008 Black </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#!" class="btn btn--border btn--black br30">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="main-sliderTop__block">
+                    <div class="main-sliderTop__img"><img src="./img/main-slider/banner-1920x980-2.jpg" alt=""></div>
+                    <div class="main-sliderTop__content">
+                        <div class="main-slider__title">Nous Optimum NS5008 Black </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#!" class="btn btn--border btn--black br30">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="main-sliderTop__block">
+                    <div class="main-sliderTop__img"><img src="./img/main-slider/banner-1920x980-3.jpg" alt=""></div>
+                    <div class="main-sliderTop__content">
+                        <div class="main-slider__title">Nous Optimum NS5008 Black </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#!" class="btn btn--border btn--black br30">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content-->
+        <div class="content no--p-top">
+            <!-- Why-->
+            <div class="section why">
+                <div class="container">
+                    <div class="section__head">
+                        <div> 
+                            <div class="h1">Почему  NOUS?</div>
+                        </div>
+                    </div>
+                    <div class="advantages advantages--why">
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M24.885 0H.861v40h30V5.977L24.884 0zm.143 2.5l3.333 3.333h-3.333V2.5zm-22.5 35.833V1.667h20.833V7.5h5.835v30.833H2.528z"></path>
+                                                <path d="M25.028 29.167h-5a.832.832 0 1 0 0 1.666h5a.832.832 0 1 0 0-1.666zM25.028 15H6.695a.833.833 0 1 0 0 1.667h18.333a.834.834 0 0 0 0-1.667zM25.028 20H6.695a.833.833 0 1 0 0 1.667h18.333a.834.834 0 0 0 0-1.667zM6.695 11.667h9.166a.834.834 0 0 0 0-1.667H6.695a.833.833 0 1 0 0 1.667zM10.028 25a4.167 4.167 0 0 0-2.5 7.5v4.167l2.5-.835 2.5.835V32.5a4.167 4.167 0 0 0-2.5-7.5zm.833 9.354l-.306-.101-.527-.176-.527.176-.306.101v-1.105c.27.055.548.083.833.083.285 0 .564-.028.833-.083v1.105zm-.833-2.687a2.503 2.503 0 0 1-2.5-2.5c0-1.379 1.121-2.5 2.5-2.5 1.38 0 2.5 1.121 2.5 2.5 0 1.377-1.12 2.5-2.5 2.5zM39.195 10a3.335 3.335 0 0 0-6.667 0v22.5h1.034l-1.034 3.611 3.332 2.222 3.335-2.222L38.16 32.5h1.035V10zm-5 0c0-.919.747-1.667 1.665-1.667.92 0 1.667.748 1.667 1.667v20.833h-3.333V10zm3.062 25.4l-1.396.93-1.395-.93.83-2.9h1.132l.83 2.9z"></path>
+                                                <path d="M10.028 28.333a.834.834 0 1 0 .003 1.668.834.834 0 0 0-.003-1.668z"></path>
+                                            </g>
+                                        </svg><span>Официальная гарантия <br>2 года</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <path d="M8.653.002a.972.972 0 0 0-.193.007c-2.833.333-5 2.733-5 5.599v4.199c0 .467.067.933.234 1.399.8 2.133 2.266 3.866 4.166 4.933v19.329A4.537 4.537 0 0 0 12.392 40a4.537 4.537 0 0 0 4.532-4.532V16.205c2.166-1.166 3.799-3.099 4.299-5.399.067-.233.067-.5.067-.8V5.608a5.627 5.627 0 0 0-5-5.599.736.736 0 0 0-.632.2.914.914 0 0 0-.267.633V7.74l-3 1.433L9.394 7.74V.842c0-.233-.1-.467-.266-.633a.725.725 0 0 0-.474-.207zm20.869.007a.825.825 0 0 0-.833.833v3.333c0 .2.067.4.2.566l1.3 1.433v12.997h-4.333a.825.825 0 0 0-.833.833c0 .466.367.833.833.833h1.166v14.997a4.167 4.167 0 0 0 8.332 0V20.837h.833a.825.825 0 0 0 .833-.833.826.826 0 0 0-.833-.833h-4.332V6.174l1.3-1.433a.906.906 0 0 0 .2-.566V.842a.825.825 0 0 0-.833-.833h-3zm.833 1.666h1.333v2.166l-.667.733-.667-.733V1.675zm-22.63.2V8.24c0 .333.168.6.468.767l3.833 1.866c.233.1.5.1.733 0l3.833-1.866c.3-.133.467-.434.467-.767V1.875a3.977 3.977 0 0 1 2.6 3.733v4.399c0 .167 0 .333-.033.467-.633 2.966-3.733 5.199-7.232 5.199a7.5 7.5 0 0 1-7.098-5.032 2.268 2.268 0 0 1-.135-.834V5.608c0-1.7 1.066-3.167 2.565-3.733zm1.8 14.996c.9.3 1.867.467 2.867.467s1.966-.167 2.866-.434v18.563a2.866 2.866 0 1 1-5.732 0V16.871zm2.507 2.52c-.3-.016-.506-.004-.506.346v12.365c0 .467.367.833.833.833a.825.825 0 0 0 .833-.833V19.737c0-.467-.367-.333-.833-.333-.117 0-.227-.008-.327-.013zm16.657 1.446h4.999v14.997a2.517 2.517 0 0 1-2.5 2.499 2.517 2.517 0 0 1-2.498-2.499V20.837zm2.333 1.667a.825.825 0 0 0-.833.833v12.064c0 .467.367.833.833.833a.825.825 0 0 0 .833-.833V23.337a.825.825 0 0 0-.833-.833zm-18.63 11.564c-.733 0-1.333.6-1.333 1.333s.6 1.333 1.333 1.333 1.333-.6 1.333-1.333-.6-1.333-1.333-1.333zm0 .999c.2 0 .333.133.333.333s-.133.333-.333.333-.333-.133-.333-.333c0-.199.133-.333.333-.333z"></path>
+                                        </svg><span>Гарантийный <br>ремонт за 24 часа</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <path d="M30.662 13.602v-.042c0-.042 0-.042-.042-.084 0-.042-.042-.042-.042-.084 0 0 0-.042-.042-.042-.042-.042-.042-.084-.084-.084l-3.77-3.77a.776.776 0 0 0-.503-.208H15.876a.698.698 0 0 0-.503.21l-3.77 3.77c-.042.041-.042.083-.084.083l-.042.042c0 .042-.042.042-.042.084s0 .042-.042.084V29.52c0 .377.335.712.712.712h2.68c.085 0 .127 0 .21-.042a2.841 2.841 0 0 0 2.806 2.387 2.793 2.793 0 0 0 2.764-2.346h11.059c.25 1.34 1.382 2.346 2.764 2.346a2.793 2.793 0 0 0 2.764-2.346h2.136a.734.734 0 0 0 .712-.712v-7.414c0-1.885-.545-3.476-1.55-4.565-.963-1.047-2.304-1.593-3.812-1.593H30.7v-2.218c-.04-.042-.04-.084-.04-.126zm-9.048-2.89h4.272l2.345 2.346h-6.618v-2.346zm-5.487 0h4.021v2.346h-6.367l2.346-2.346zm1.59 20.483a1.394 1.394 0 0 1-1.381-1.382c0-.754.628-1.382 1.382-1.382.754 0 1.382.628 1.382 1.382 0 .754-.628 1.382-1.382 1.382zm11.478-14.534v12.188H20.61c-.084 0-.168 0-.209.042a2.806 2.806 0 0 0-2.681-1.927c-1.257 0-2.304.838-2.681 1.927a.774.774 0 0 0-.293-.084h-1.927V14.44h16.42v2.22h-.043zm5.11 14.534a1.394 1.394 0 0 1-1.381-1.382c0-.754.628-1.382 1.382-1.382.754 0 1.382.628 1.382 1.382 0 .754-.628 1.382-1.382 1.382zm.294-13.822c2.429 0 3.937 1.8 3.937 4.733v6.702h-1.55a2.824 2.824 0 0 0-2.681-1.885 2.81 2.81 0 0 0-2.64 1.885h-.962V17.373h3.896zM3.77 17.038h5.487c.377 0 .712.335.712.712a.734.734 0 0 1-.712.712H3.77a.734.734 0 0 1-.712-.712c0-.377.335-.712.712-.712zM0 21.645c0-.377.335-.712.712-.712h8.503c.377 0 .712.335.712.712a.734.734 0 0 1-.712.712H.712A.706.706 0 0 1 0 21.645zm9.97 3.895a.734.734 0 0 1-.713.712H3.77a.734.734 0 0 1-.712-.712c0-.377.335-.712.712-.712h5.487c.418 0 .712.293.712.712zm6.366-3.811c0-.377.335-.712.712-.712h5.53l-.964-.963c-.293-.293-.293-.754 0-1.005.293-.293.754-.293 1.005 0l2.178 2.178c.042.042.042.084.084.084 0 0 0 .042.042.042 0 .042.042.042.042.084s0 .042.042.084v.336c0 .042 0 .042-.042.084 0 .042-.042.042-.042.084 0 0 0 .042-.042.042-.042.042-.042.084-.084.084l-2.304 2.304a.771.771 0 0 1-.503.209.776.776 0 0 1-.503-.21c-.293-.292-.293-.753 0-1.004l1.09-1.09h-5.53c-.376.08-.711-.254-.711-.631z"></path>
+                                        </svg><span class="hidden-xxs">Бесплатная доставка <br>по Украине</span><span class="visible-xxs">Бесплатная доставка</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M14.167 32.5h-.833v-5.977a2.482 2.482 0 0 0-.732-1.767L10 22.155V17.5a2.499 2.499 0 0 0-1.667-2.347v-6.82H12.5a2.5 2.5 0 0 0 2.5-2.5V1.667h19.167c.46 0 .833.373.833.833v15h1.667v-15a2.5 2.5 0 0 0-2.5-2.5h-20a.833.833 0 0 0-.589.244L6.911 6.911a.825.825 0 0 0-.244.589v4.167h-.834a.833.833 0 0 0-.589.244l-5 5A.833.833 0 0 0 0 17.5V25a.826.826 0 0 0 .11.417l3.223 5.638V32.5H2.5a.833.833 0 0 0-.833.833v5.833c0 .461.373.834.833.834h11.667c.46 0 .833-.373.833-.834v-5.833a.833.833 0 0 0-.833-.833zM12.5 6.667H9.512l3.822-3.822v2.988a.835.835 0 0 1-.834.834zM4.89 30.416l-3.223-5.638v-6.933l4.512-4.512h.488v1.82A2.499 2.499 0 0 0 5 17.5v4.655l-1.422 1.422 1.178 1.178 1.667-1.667a.833.833 0 0 0 .244-.589v-5a.833.833 0 1 1 1.666.001v5c0 .221.088.433.244.589l2.845 2.845a.84.84 0 0 1 .244.589V32.5H5v-1.667a.826.826 0 0 0-.11-.417zm8.443 7.917h-10v-4.167h10v4.167z"></path>
+                                                <path d="M33.333 7.5V5.833a2.5 2.5 0 0 0-2.5-2.5h-1.667V5h1.667c.46 0 .833.373.833.833V7.5h1.667zM25.833 3.333H27.5V5h-1.667zM40 25.833a7.5 7.5 0 1 0-12.5 5.574v7.759a.835.835 0 0 0 1.354.651L32.5 36.9l3.646 2.917a.832.832 0 0 0 1.354-.65v-7.759a7.482 7.482 0 0 0 2.5-5.575zm-13.334 0a5.833 5.833 0 1 1 5.833 5.833 5.84 5.84 0 0 1-5.833-5.833zm9.167 11.599l-2.812-2.25a.833.833 0 0 0-1.042 0l-2.812 2.25v-4.891a7.418 7.418 0 0 0 6.667 0v4.891z"></path>
+                                                <path d="M31.666 28.333a.833.833 0 0 0 .589-.244l3.333-3.333-1.178-1.178-2.744 2.744-1.077-1.077-1.178 1.178 1.667 1.667a.834.834 0 0 0 .588.243zM16.667 38.333h9.167V40h-9.167zM15 10.833h16.667V12.5H15zM11.667 14.167h20v1.667h-20zM11.667 17.5h15v1.667h-15zM11.667 20.833h11.667V22.5H11.667zM11.667 10.833h1.667V12.5h-1.667zM25 31.666V30h-7.5a.833.833 0 0 1-.833-.833v-2.5c0-.46.373-.833.833-.833h5.833v-1.667H17.5a2.5 2.5 0 0 0-2.5 2.5v2.5a2.5 2.5 0 0 0 2.5 2.5H25z"></path>
+                                            </g>
+                                        </svg><span class="hidden-xxs">Европейская сертификация <br>продукции "CE"</span><span class="visible-xxs">Европейская сертификация </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-category no--p-bottom">
+                <div class="container">
+                    <div class="main-category__wrapper">
+                        <div class="main-category__block main-category__block--1"><a href="#!"><img src="./img/main-category/category-1.png" alt=""></a></div>
+                        <div class="main-category__block main-category__block--2"><a href="#!"><img src="./img/main-category/category-2.png" alt=""></a></div>
+                        <div class="main-category__block main-category__block--3"><a href="#!"><img src="./img/main-category/category-3.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-category no--p-bottom">
+                <div class="container">
+                    <div class="section__head">
+                        <div> 
+                            <div class="h1">Новые поступления!</div>
+                        </div>
+                    </div>
+                    <div class="main-category__wrapper">
+                        <div class="main-category__block main-category__block--4"><a href="#!"><img src="./img/main-category/category-4.png" alt=""></a></div>
+                        <div class="main-category__block main-category__block--5"><a href="#!"><img src="./img/main-category/category-5.png" alt=""></a></div>
+                        <div class="main-category__block main-category__block--6"><a href="#!"><img src="./img/main-category/category-6.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-category">
+                <div class="container">
+                    <div class="section__head">
+                        <div> 
+                            <div class="h1">Лидеры продаж</div>
+                        </div>
+                    </div>
+                    <div class="main-category__wrapper main-category__wrapper--row">
+                        <div class="main-category__block main-category__block--7"><a href="#!"><img src="./img/main-category/category-7.png" alt=""></a></div>
+                        <div class="main-category__block main-category__block--8"><a href="#!"><img src="./img/main-category/category-8.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+                    <div class="subscription">
+                        <div class="container">
+                            <div class="subscription__wrapper">
+                                <div>
+                                    <div class="subscription__body">
+                                        <div>
+                                            <div class="subscription__label">Получите <strong>скидку 10% </strong><br>за подписку на новости</div>
+                                        </div>
+                                        <div>
+                                            <!-- .subscription__thank.is-active-->
+                                            <div class="subscription__thank">
+                                                <div>Спасибо за подписку! Проверьте почту, мы отправили Вам промо-кодом на <strong>скидку 10%</strong></div>
+                                            </div>
+                                            <form action="#" class="subscription__form">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Введите Email" class="subscription__input form-control">
+                                                    <button type="submit" class="subscription__btn"><i class="fab fa-telegram-plane"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- Footer-->
+        <!--footer.footer
+        .container
+          .footer__top
+            .advantages
+              div
+                .advantages__block
+                  +iconAdvantages1
+                  span Официальный 
+                    br
+                    | магазин TM NOUS
+              div
+                .advantages__block
+                  +iconAdvantages2
+                  span Гарантия Возврата 
+                    br
+                    | в течении 14 дней
+              div
+                .advantages__block
+                  +iconAdvantages3
+                  span Быстрая доставка 
+                    br
+                    | от 1-2 дней
+              div
+                .advantages__block
+                  +iconAdvantages4
+                  span Послепродажная поддержка 
+                    br
+                    | 7 дней в неделю
+        
+          .footer__center
+            div
+              .footer__logo
+                +logo
+            div
+              nav.footer__navigation
+                ul
+                  li: a(href="#!") Продукты
+                  li: a(href="#!") О нас
+                  li: a(href="#!") Поддержка
+                  li: a(href="#!") Компания
+            div
+              .footer__social
+                a(href="#!" target="_blank")
+                  i.fab.fa-facebook-f
+                a(href="#!" target="_blank")
+                  i.fab.fa-twitter
+                a(href="#!" target="_blank")
+                  i.fab.fa-youtube
+          .footer__bottom
+            .footer__copyright Copyright © 2018 Nous
+            .footer__development Разработка 
+              a(href="#!" target="_blank") DARTC
+        
+        -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="advantages">
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M12.713 38.541c.025.01.047.023.074.031l.008.002A19.031 19.031 0 0 0 20.035 40a19.03 19.03 0 0 0 7.345-1.467l.012-.003c.025-.008.046-.02.07-.029l.036-.015c.025-.012.052-.021.076-.034 6.814-2.932 11.599-9.711 11.599-17.588 0-4.245-1.361-8.265-3.937-11.626a.935.935 0 1 0-1.486 1.138 17.097 17.097 0 0 1 3.55 10.488c0 6.774-3.923 12.647-9.615 15.473L22.478 19.69l1.219-3.854L28.5 18.5a.936.936 0 0 0 1.362-.591l3.423-13.662a.935.935 0 0 0-.054-.61L31.852.554a.936.936 0 0 0-.712-.543c-.032-.005-.064-.001-.096-.002C31.028.005 31.02 0 30.998 0H9.047c-.025 0-.034.005-.05.008-.03.001-.06-.002-.09.002a.939.939 0 0 0-.714.544l-1.38 3.082a.942.942 0 0 0-.053.61l3.423 13.662a.939.939 0 0 0 .908.708.926.926 0 0 0 .454-.118l4.843-2.686 1.226 3.878-5.133 16.694c-5.744-2.808-9.71-8.709-9.71-15.522 0-3.831 1.229-7.459 3.554-10.492a.936.936 0 0 0-1.486-1.139 18.958 18.958 0 0 0-3.94 11.631c0 7.96 4.886 14.798 11.814 17.679zm15.63-22.27l-6.465-3.585 6.447-7.306c.014-.014.03-.025.044-.04l2.37-2.692.652 1.458-3.048 12.165zm-8.32-4.312l-5.561-6.302h11.123l-5.562 6.302zm8.9-10.087l-1.687 1.914H12.815l-1.691-1.914h17.8zM8.656 4.105l.653-1.46 8.86 10.04-6.465 3.585L8.655 4.105zm11.368 9.692l2.003 1.111-1.203 3.805h-1.555l-1.21-3.827 1.965-1.089zm-.75 6.864h1.548l5.137 16.421a17.16 17.16 0 0 1-5.922 1.047c-2.042 0-4.002-.359-5.822-1.013l5.06-16.455z"></path>
+                                                <path d="M28.594 25.911v-2.146h3.164a.936.936 0 1 0 0-1.872h-4.1a.936.936 0 0 0-.936.936v3.64c0 .344.188.659.49.823l3.342 1.807a.937.937 0 0 0 .89 0l3.342-1.807a.936.936 0 0 0 .49-.823v-3.64a.936.936 0 1 0-1.871 0v3.082l-2.406 1.3-2.405-1.3z"></path>
+                                            </g>
+                                        </svg><span>Официальный <br>магазин TM NOUS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M20.912 4.797V.907a.91.91 0 0 0-.909-.908.894.894 0 0 0-.509.16L12.52 4.932a.908.908 0 0 0-.01 1.489l6.973 4.918a.9.9 0 0 0 .52.167.91.91 0 0 0 .91-.908V6.633c8.212.482 14.63 7.382 14.63 15.754 0 8.712-6.97 15.801-15.537 15.801S4.47 31.099 4.47 22.387a.906.906 0 0 0-1.811 0C2.66 32.099 10.44 40 20.006 40c9.566 0 17.347-7.901 17.347-17.613 0-9.4-7.214-17.108-16.44-17.59zm-6.292.894l4.481-3.065V8.85l-4.48-3.159z"></path>
+                                                <path d="M11.608 28.874c0 .648.527 1.175 1.175 1.175H26.23c.648 0 1.175-.527 1.175-1.175v-7.968h.538v-5.04H11.07v5.04h.538v7.968zm1.812-.637v-7.331h12.173v7.331H13.42zm12.71-10.558v1.414H12.882v-1.414H26.13z"></path>
+                                            </g>
+                                        </svg><span>Гарантия Возврата <br>в течении 14 дней</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M10.283 9.122h3.349c.377 0 .708-.33.708-.708a.725.725 0 0 0-.708-.708h-3.349a.726.726 0 0 0-.708.708c0 .378.331.708.708.708zM39.528 19.075l-3.585-5.613a2.079 2.079 0 0 0-1.792-.991h-5V9.783c0-1.18-.943-2.123-2.123-2.123H16.462a.726.726 0 0 0-.708.708c0 .378.33.708.708.708h10.566c.377 0 .708.33.708.708v16.934H13.868c-.613-1.038-1.745-1.792-3.066-1.792a3.493 3.493 0 0 0-3.066 1.792H5.991a.726.726 0 0 1-.708-.708v-2.453a.726.726 0 0 0-.708-.708.726.726 0 0 0-.708.708v2.453c0 1.179.943 2.123 2.123 2.123h1.274v.33c0 1.934 1.604 3.538 3.538 3.538 1.934 0 3.538-1.604 3.538-3.538v-.33H29.151v.33c0 1.934 1.604 3.538 3.538 3.538 1.934 0 3.538-1.604 3.538-3.538v-.33h1.651a2.114 2.114 0 0 0 2.123-2.123v-5.755a3.65 3.65 0 0 0-.473-1.18zM10.802 30.632a2.114 2.114 0 0 1-2.123-2.123c0-1.179.943-2.123 2.123-2.123a2.05 2.05 0 0 1 1.887 1.179c0 .094.047.236.142.33.047.189.094.425.094.613 0 1.18-.944 2.124-2.123 2.124zm21.792 0a2.114 2.114 0 0 1-2.123-2.123c0-1.179.943-2.123 2.123-2.123 1.179 0 2.123.943 2.123 2.123a2.114 2.114 0 0 1-2.123 2.123zm5.897-4.576c0 .377-.33.708-.708.708h-2.075c-.613-1.038-1.745-1.792-3.066-1.792a3.493 3.493 0 0 0-3.066 1.792h-.33v-12.83h4.953c.236 0 .472.142.613.33l3.538 5.613c.094.094.094.236.094.377v5.802h.047z"></path>
+                                                <path d="M33.726 15.302c-.142-.189-.377-.33-.613-.33h-1.981a.726.726 0 0 0-.708.708v4.245c0 .377.33.708.708.708h4.67c.377 0 .708-.33.708-.708a.605.605 0 0 0-.189-.472l-2.595-4.151zm-1.839 3.915v-2.83h.849l1.792 2.83h-2.641zM1.934 11.811h14.481c.377 0 .708-.33.708-.708a.725.725 0 0 0-.708-.708H1.934a.726.726 0 0 0-.708.708c0 .378.283.708.708.708zM5.66 19.122c0 .377.33.708.708.708h14.481c.377 0 .708-.33.708-.708a.726.726 0 0 0-.708-.708H6.368a.727.727 0 0 0-.708.708zM4.104 19.122a.726.726 0 0 0-.708-.708H.708a.727.727 0 0 0-.708.708c0 .377.33.708.708.708h2.689a.695.695 0 0 0 .707-.708zM14.953 15.962c.377 0 .708-.33.708-.708a.726.726 0 0 0-.708-.708H7.594a.726.726 0 0 0-.708.708c0 .377.33.708.708.708h7.359z"></path>
+                                            </g>
+                                        </svg><span>Быстрая доставка <br>от 1-2 дней</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M26.715 28.06a.763.763 0 0 0 .762-.763v-7.96a.763.763 0 0 0-.762-.763H13.447a.763.763 0 0 0-.762.763v11.941a.761.761 0 0 0 1.3.54l3.716-3.757h9.014zm-9.827-1.302l-2.68 2.679V20.1h11.743v6.434h-8.524a.766.766 0 0 0-.54.224z"></path>
+                                                <path d="M17.427 22.753h5.308a.763.763 0 0 0 0-1.526h-5.308a.763.763 0 0 0 0 1.526zM24.06 23.881H16.1a.764.764 0 0 0 0 1.526h7.96a.764.764 0 0 0 0-1.526zM7.476 23.218H4.824a.764.764 0 0 0 0 1.526h2.653a.764.764 0 0 0-.001-1.526zM7.476 19.901H4.824a.764.764 0 0 0 0 1.526h2.653a.764.764 0 0 0-.001-1.526zM7.476 26.534H4.824a.764.764 0 0 0 0 1.526h2.653a.764.764 0 0 0-.001-1.526z"></path>
+                                                <path d="M36.863 15.921H36.1v-.564C36.1 7.033 28.765 0 20.08 0 11.398 0 4.06 7.033 4.06 15.357v.564h-.762a1.893 1.893 0 0 0-1.891 1.891v12.337c0 1.043.848 1.891 1.89 1.891h5.705a1.893 1.893 0 0 0 1.89-1.891V17.812a1.893 1.893 0 0 0-1.89-1.891h-.763v-.564c0-5.955 5.534-11.178 11.84-11.178 6.308 0 11.842 5.223 11.842 11.178v.564h-.763a1.893 1.893 0 0 0-1.891 1.891v12.337c0 1.043.848 1.891 1.89 1.891h2.09v.564a3.885 3.885 0 0 1-3.881 3.881H24.04a2.748 2.748 0 0 0-2.635-1.99h-2.653A2.756 2.756 0 0 0 16 37.248 2.756 2.756 0 0 0 18.754 40h2.653a2.748 2.748 0 0 0 2.635-1.99h5.325a5.412 5.412 0 0 0 5.407-5.406v-.564h2.089a1.893 1.893 0 0 0 1.89-1.891V17.812a1.893 1.893 0 0 0-1.89-1.891zm-6.07 1.891c0-.202.165-.365.366-.365h5.704c.2 0 .365.164.365.365v12.337a.365.365 0 0 1-.365.365h-5.704a.366.366 0 0 1-.365-.365V17.812zM9.368 30.149a.365.365 0 0 1-.365.365H3.298a.366.366 0 0 1-.365-.365V17.812c0-.202.164-.365.365-.365h5.704c.2 0 .365.164.365.365v12.337zM6.715 15.357v.564h-1.13v-.564c0-7.497 6.638-13.831 14.495-13.831 7.857 0 14.496 6.334 14.496 13.831v.564h-1.13v-.564c0-6.886-6.12-12.704-13.365-12.704S6.715 8.471 6.715 15.357zm14.692 23.118h-2.653a1.23 1.23 0 0 1-1.228-1.227 1.23 1.23 0 0 1 1.228-1.228h2.653a1.23 1.23 0 0 1 1.228 1.228 1.23 1.23 0 0 1-1.228 1.227z"></path>
+                                                <path d="M32.685 24.743h2.653a.764.764 0 0 0 0-1.526h-2.653a.764.764 0 0 0 0 1.526zM32.685 21.427h2.653a.764.764 0 0 0 0-1.526h-2.653a.764.764 0 0 0 0 1.526zM32.685 28.06h2.653a.764.764 0 0 0 0-1.526h-2.653a.764.764 0 0 0 0 1.526z"></path>
+                                            </g>
+                                        </svg><span>Послепродажная поддержка <br>7 дней в неделю</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-new">
+                    <div class="footer-new__center">
+                        <dl class="toggle false">
+                            <dt><i class="plus"></i>Продукция</dt>
+                            <dd><a href="#!">Смартфоны NOUS</a></dd>
+                            <dd><a href="#!">Смартфоны Xiaomi </a></dd>
+                            <dd><a href="#!">Смартфоны Doogee </a></dd>
+                            <dd><a href="#!">Защищенные телефоны</a></dd>
+                            <dd><a href="#!">Телефоны с кнопкой SOS</a></dd>
+                            <dd><a href="#!">Аксессуары</a></dd>
+                            <dd><a href="#!">Запасные части</a></dd>
+                        </dl>
+                        <dl class="toggle false">
+                            <dt><i class="plus"></i>Поддержка</dt>
+                            <dd><a href="#!">Гарантийные условия</a></dd>
+                            <dd><a href="#!">Сервисное обслуживание</a></dd>
+                            <dd><a href="#!">Загрузки</a></dd>
+                            <dd><a href="#!">Возврат товара</a></dd>
+                            <dd><a href="#!">Доставка и оплата</a></dd>
+                        </dl>
+                        <dl class="toggle false">
+                            <dt><i class="plus"></i>Компания</dt>
+                            <dd><a href="#!">О нас</a></dd>
+                            <dd><a href="#!">Новости</a></dd>
+                            <dd><a href="#!">Акции</a></dd>
+                            <dd><a href="#!">Контакты</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-new__right">
+                        <div class="footer__logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 207.2 59.7">
+                                        <g>
+                                            <path d="M0 59.7V20C0 14.5 2 9.8 5.9 5.9 9.8 2 14.5 0 20 0s10.3 2 14.2 5.9c3.9 3.9 5.9 8.6 5.9 14.2v35.5l-8.5 4.1V20.2c-.1-3.3-1.2-6-3.4-8.2-2.3-2.2-5-3.4-8-3.4-3.2 0-5.9 1.1-8.3 3.4-2.3 2.2-3.4 4.9-3.4 8v35.5L0 59.7zM134.9 51c3 0 5.6-1.1 7.8-3.4 2.2-2.2 3.4-4.9 3.4-8V4.1l8.5-4.1v39.6c0 5.5-2 10.3-5.9 14.2-3.9 3.9-8.6 5.9-14.2 5.9-5.5 0-10.3-2-14.2-5.9-3.9-3.9-5.9-8.6-5.9-14.2V19.5l8.5-4.1v24.1c.1 3.3 1.2 6 3.4 8.2 2.3 2.2 5.2 3.3 8.6 3.3zM187.8 51c3.2 0 5.8-1.1 7.8-3.2 2.1-2.2 3.1-4.6 3.1-7.3 0-2.4-1-4.6-3.1-6.8-2.1-2.1-4.9-3.3-8.5-3.5-4.4-.2-7.9-1.5-10.5-4-2.5-2.4-4-5.8-4.5-10.2 0-.3-.1-.6-.1-1 .2-3.9 1.7-7.3 4.7-10.3 3-3.2 6.7-4.7 11-4.7 4.6 0 8.3 1.6 11 4.7 1.8 2.1 3.2 4.8 4.2 8.1-1 .5-7.6 3.7-7.6 3.7-.6-2.3-1.4-4.2-2.6-5.6-1.3-1.5-3-2.2-5.1-2.2-2 0-3.7.7-5.1 2.2-1.3 1.4-2 2.9-2 4.6v.3c0 1.7.6 3.2 1.9 4.4 1.2 1.2 2.9 1.9 5.1 2.1 6.2.7 10.9 2.6 14.2 5.7 3.6 3.5 5.4 7.7 5.4 12.7v.3c-.1 4.8-1.8 9-5.3 12.8-3.6 3.9-8.3 5.9-14.2 5.9-5.6 0-10.2-1.9-13.7-5.8-4-4.2-6.2-9.1-6.4-14.4l8.5-4.1.1 4.1c0 3.3 1.2 6 3.4 8.2 2.3 2.2 5 3.3 8.3 3.3zM65.7 34.8V19.9c0-3 1.2-5.7 3.4-7.9s4.8-3.4 7.8-3.4c3.4 0 6.2 1.1 8.5 3.4 2.2 2.2 3.3 4.9 3.4 8.2v3.4l8.5-4.1c-.1-5.3-2.1-9.9-5.9-13.7C87.5 2 82.8 0 77.2 0 71.7 0 67 2 63.1 5.9c-3.9 3.9-5.9 8.6-5.9 14.2v18.8l8.5-4.1zM88.8 32.1v7.3c-.1 3.3-1.2 6-3.4 8.2-2.3 2.2-4.9 3.4-7.9 3.4-3.1 0-5.8-1.1-8.3-3.4-1.4-1.3-2.4-2.9-3-4.6l-7.8 3.7c1 2.6 2.5 4.9 4.6 7 3.9 3.9 8.6 5.9 14.2 5.9 5.5 0 10.3-2 14.2-5.9 3.9-3.9 5.9-8.6 5.9-14.2V28.1l-8.5 4z"></path>
+                                        </g>
+                                    </svg>
+                        </div>
+                        <div class="footer__social"><a href="#!" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="#!" target="_blank"><i class="fab fa-twitter"></i></a><a href="#!" target="_blank"><i class="fab fa-youtube"></i></a></div>
+                        <div class="footer__copyright">Copyright © 2018 Nous</div>
+                        <div class="footer__development">Разработка <a href="#!" target="_blank">DARTC</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--[if gte IE 9]
+        <script src='./js/libs/html5shiv/es5-shim.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+        <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+        
+        -->
+        <!-- Load Scripts-->
+        <!-- Footer js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./js/libs/plugins-scroll/plugins-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="./js/libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+        <script src="./js/libs/selectric/jquery.selectric.min.js"></script>
+        <script src="./js/libs/slick/slick.min.js"></script>
+        <script src="./js/libs/jquery.sticky-kit/jquery.sticky-kit.min.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

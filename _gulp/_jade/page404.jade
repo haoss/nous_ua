@@ -1,0 +1,49 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Ошибка 404' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Ошибка 404' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .content__banner.content__banner--404
+        .container
+          .content__banner-title Упс, ошибка!
+            br
+            | Страница не найдена.
+          .row
+            .col-md-5.col-sm-6
+              .clear10
+              p Добро пожаловать на страницу 404! Вы находитесь здесь, потому что ввели адрес страницы, которая уже не существует или была перемещена по другому адресу.
+              a(href="#!").btn.btn--green.br30 Перейти на главную
+              
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

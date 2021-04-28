@@ -1,0 +1,82 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = '1 Новость' //активный пункт меню, список в header.jade
+  -var pageTitle = '1 Новость' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .container
+        
+        ul.breadcrumbs
+          li
+            a(href="#!") Главная
+          li
+            a(href="#!") Новости 
+        
+        .content__wrapper
+          .row
+            .col-md-5
+              .content__img
+                img(src="./img/news/news-img-2.png", alt="").img-responsive
+            .col-md-7
+              h1 Название новости название новости название новости
+              .news__date 09.07.2018, 15:21
+              
+              p
+                strong Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                br
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              p 
+                strong Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                br
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              p
+                strong Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                br
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              
+              .shared
+                div
+                  .shared__label Поделиться:
+                div
+                  .shared__social
+                    a(href="#!" target="_blank")
+                      i.fab.fa-facebook-f
+                    a(href="#!" target="_blank")
+                      i.fab.fa-twitter
+                    a(href="#!" target="_blank")
+                      i.fab.fa-youtube
+        
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

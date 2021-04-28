@@ -1,0 +1,519 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Товар' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Товар' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-product
+    
+    .header-separator
+
+    // Content
+    .content
+      .container
+        
+        ul.breadcrumbs
+          li
+            a(href="#!") Главная
+          li
+            a(href="#!") Каталог 
+          li
+            a(href="#!") Смартфоны
+        
+        .content__wrapper
+          
+          .single-product
+            .single-product__top
+              div
+                .single-product__gallery
+                  .single-product__gallery-left
+                    .single-product__gallery-carousel-left
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-left-block
+                          img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                  .single-product__gallery-big
+                    .single-product__gallery-carousel-big.gallery
+                      div
+                        .single-product__gallery-big-block
+                          a(href="./img/catalog/catalog-1.png").gallery-item
+                            img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-big-block
+                          a(href="./img/catalog/catalog-1.png").gallery-item
+                            img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-big-block
+                          a(href="./img/catalog/catalog-1.png").gallery-item
+                            img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-big-block
+                          a(href="./img/catalog/catalog-1.png").gallery-item
+                            img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+                      div
+                        .single-product__gallery-big-block
+                          a(href="./img/catalog/catalog-1.png").gallery-item
+                            img(src="./img/catalog/catalog-1.png", alt="").img-responsive
+              div
+                .single-product__info
+                  .single-product__head
+                    h1 Nous Optimum NS2414
+                    .single-product__availability
+                      i.fas.fa-check
+                      span Товар в наличии
+                    //-.single-product__availability
+                      i.fas.fa-times
+                      span Нет в наличии
+                    .single-product__rating
+                      ul
+                        li.star-color
+                          i.fas.fa-star
+                        li.star-color
+                          i.fas.fa-star
+                        li.star-color
+                          i.fas.fa-star
+                        li.star-color
+                          i.fas.fa-star
+                        li
+                          i.fas.fa-star
+                      div Отзывы 
+                        | (
+                        a(href="#!") 05
+                        | )
+                  
+                  .clear
+                  
+                  .single-product__price
+                    del 2 699 
+                      small грн
+                    strong 1 699 
+                      small грн
+                  
+                  button(type="button").btn.btn--orange.btn--single-product
+                    i.fas.fa-shopping-cart
+                    | В корзину
+                  
+                  .clear15
+                  .product__block-size
+                    ul
+                      li.active
+                        span 32 GB
+                      li
+                        span 64 GB
+                      li
+                        span 128 GB
+                  
+                  .clear
+                  .product__block-color
+                    ul
+                      li.active(title='Xiaomi MI A2 Lite 3/32Gb Blue EU', style='background-color: #4a86e8')
+                      li.color-switch(title='Xiaomi MI A2 Lite 3/32Gb Gold EU', style='background-color: #ffe599', data-href='#!')
+                      li.color-switch(title='Xiaomi MI A2 Lite 3/32Gb Black EU', style='background-color: #000000', data-href='#!')
+                  
+                  .clear
+                  .single-product__1click
+                    div
+                      .single-product__1click-body
+                        div
+                          .single-product__1click-label Купить в 1 клик
+                        div
+                          .single-product__1click-thank
+                            div Спасибо! Заказ 
+                              strong №12312312 
+                              | принят! В ближайшее время с вами свяжется менеджер и обсудит детали заказа.
+                          .single-product__1click-form
+                            form(action="#").single-product__1click-form
+                              input(type="text" placeholder="+38 (___) ___ __ __").single-product__1click-input.phone-mask
+                              button(type="submit").single-product__1click-btn Купить
+                  
+                  .single-product__table
+                    .row
+                      .col-md-6
+                        ul
+                          li
+                            i.fas.fa-caret-right
+                            | Экран (5", IPS, 960x480)
+                          li
+                            i.fas.fa-caret-right
+                            | Spreadtrum SC7731C (1.3 ГГц)
+                          li
+                            i.fas.fa-caret-right
+                            | Основная камера: 5 Мп
+                          li
+                            i.fas.fa-caret-right
+                            | Фронтальная камера: 5 Мп
+                          li
+                            i.fas.fa-caret-right
+                            | RAM 1 ГБ
+                      .col-md-6
+                        ul
+                          li
+                            i.fas.fa-caret-right
+                            | SDHC (до 64 ГБ)/ 3G/ GPS/
+                          li
+                            i.fas.fa-caret-right
+                            | Поддержка 2х SIM-карт (Micro-SIM)
+                          li
+                            i.fas.fa-caret-right
+                            | Android 7.0 (Nougat)/ 2000 мА*
+                          li
+                            i.fas.fa-caret-right
+                            | 8 ГБ встроенной памяти + microSD
+                  
+                  .single-product__quality
+                    .single-product__quality-wrapper
+                      div
+                        i.fab.fa-get-pocket
+                        | Гарантия 24 месяца
+                      div 
+                        i.fas.fa-arrows-alt-h
+                        | Возврат, обмен 14 дней
+                      div
+                        i.fas.fa-car
+                        | Бесплатная доставка
+                  
+            .single-product__tab
+  
+              ul.nav.single-product__nav(role='tablist') 
+                li.active(role='presentation')
+                  a(href='#singleTab1', aria-controls='singleTab1', role='tab', data-toggle='tab') Описание
+                li(role='presentation')
+                  a(href='#singleTab2', aria-controls='singleTab2', role='tab', data-toggle='tab') Характеристики
+                li(role='presentation')
+                  a(href='#singleTab3', aria-controls='singleTab3', role='tab', data-toggle='tab') Отзывы
+                li(role='presentation')
+                  a(href='#singleTab4', aria-controls='singleTab4', role='tab', data-toggle='tab') Аксессуары
+                li(role='presentation')
+                  a(href='#singleTab5', aria-controls='singleTab5', role='tab', data-toggle='tab') Обзоры
+                li(role='presentation')
+                  a(href='#singleTab6', aria-controls='singleTab6', role='tab', data-toggle='tab') Загрузки
+                  
+              // Tab panes
+              .tab-content
+                #singleTab1.tab-pane.active(role='tabpanel')
+                  
+                  .single-product__desc
+                    .single-product__desc-block
+                      div
+                        .single-product__desc-title Nous Optimum NS5008 Black 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      div
+                        img(src="./img/product/product-desc-1.png", alt="")
+                    .single-product__desc-block.single-product__desc-block--reverse
+                      div
+                        .single-product__desc-title Nous Optimum NS5008 Black 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      div
+                        img(src="./img/product/product-desc-2.png", alt="")
+                    .single-product__desc-block
+                      div
+                        .single-product__desc-title Nous Optimum NS5008 Black 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      div
+                        img(src="./img/product/product-desc-3.png", alt="")
+                    .single-product__desc-block.single-product__desc-block--reverse
+                      div
+                        .single-product__desc-title Nous Optimum NS5008 Black 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      div
+                        img(src="./img/product/product-desc-4.png", alt="")
+                  
+                #singleTab2.tab-pane(role='tabpanel')
+                  
+                  .h2 Технические характеристики
+                  
+                  .table-responsive
+                    table.table
+                      tbody
+                        tr
+                          th(colspan="2") Стандарт связи/интернет
+                        tr
+                          td Стандарт связи
+                          td 3G (WCDMA/UMTS)
+                            br
+                            | 2G (EDGE)
+                        tr
+                          th(colspan="2") Дисплей
+                        tr
+                          td Диагональ экрана
+                          td 5
+                        tr
+                          td Разрешение дисплея
+                          td 960х480
+                        tr
+                          td Тип матрицы
+                          td IPS
+                        tr
+                          td Материал экрана
+                          td Стекло
+                        tr
+                          th(colspan="2") СИМ-карты
+                        tr
+                          td Количество СИМ
+                          td 2
+                        tr
+                          td Размеры СИМ-карты
+                          td Micro-SIM
+                        tr
+                          td Поддержка 3G
+                          td Есть
+                        tr
+                          th(colspan="2") Функции памяти
+                        tr
+                          td Оперативная память
+                          td 1 ГБ
+                        tr
+                          td Встроенная память
+                          td 8 ГБ
+                        tr
+                          td Формат поддерживаемых карт памяти
+                          td microSD
+                        tr
+                          td Максимальный объем поддерживаемо карты памяти
+                          td 64 ГБ
+                        tr
+                          td Количество контактов в телефонной книге 
+                          td Ограничено памятью самого устройства
+                        tr
+                          td Количество номеров на 1 контакт
+                          td Ограничено памятью самого устройства
+                        tr
+                          td Количество символов в названии контакта
+                          td Ограничено памятью самого устройства
+                        tr
+                          td Комбинированный слот
+                          td Да
+                        tr
+                          th(colspan="2") Операционная система
+                        tr
+                          td Операционная система
+                          td Да
+                  
+                #singleTab3.tab-pane(role='tabpanel')
+                  
+                  .h2 Отзывы
+                  
+                  .row
+                    .col-md-8.col-sm-7
+                      
+                      .comments
+                        .comments__block
+                          .comments__block-title Валерия
+                          .comments__block-date 06.07.2018, 15:22
+                          ul.catalog__block-rating
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li
+                              i.fas.fa-star
+                          .clear
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          
+                          .comments__block
+                            .comments__block-title Администрация
+                            .comments__block-date 06.07.2018, 15:22
+                            .clear
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          
+                        .comments__block
+                          .comments__block-title Валерия
+                          .comments__block-date 06.07.2018, 15:22
+                          ul.catalog__block-rating
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li
+                              i.fas.fa-star
+                          .clear
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          
+                        .comments__block
+                          .comments__block-title Леся
+                          .comments__block-date 06.07.2018, 15:22
+                          ul.catalog__block-rating
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li.star-color
+                              i.fas.fa-star
+                            li
+                              i.fas.fa-star
+                          .clear
+                          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                      
+                    .col-md-4.col-sm-5
+                      .contact__block
+                        form(action="#")
+                          fieldset
+                            .form-rating
+                              label Оцените товар
+                              .form-rating-block
+                                span
+                                  input#str5(type='radio', name='rating', value='5')
+                                  label(for='str5')
+                                    i.fas.fa-star
+                                span
+                                  input#str4(type='radio', name='rating', value='4')
+                                  label(for='str4')
+                                    i.fas.fa-star
+                                span
+                                  input#str3(type='radio', name='rating', value='3')
+                                  label(for='str3')
+                                    i.fas.fa-star
+                                span
+                                  input#str2(type='radio', name='rating', value='2')
+                                  label(for='str2')
+                                    i.fas.fa-star
+                                span.checked
+                                  input#str1(type='radio', name='rating', value='1')
+                                  label(for='str1')
+                                    i.fas.fa-star
+                            
+                            legend Оставить отзыв
+                            .form-group
+                              label.hidden Введите Имя
+                              input(type="text" placeholder="Введите Имя").form-control
+                            .form-group
+                              label.hidden Введите Email
+                              input(type="text" placeholder="Введите Email").form-control
+                            .form-group
+                              label.hidden Телефон
+                              input(type="text" placeholder="+38 (___) ___ __ __").form-control.phone-mask
+                            .form-group
+                              label.hidden Сообщение
+                              textarea.form-control(placeholder="Ваш комментарий")
+                            .form-group
+                              .checkbox
+                                label
+                                  input(type='checkbox')
+                                  | Уведомлять об ответах по эл. почте
+
+                            
+                            button(type="button").btn.btn--green Отправить
+                
+                #singleTab4.tab-pane(role='tabpanel')
+                  
+                  .h2 Аксессуары
+                  .catalog
+                    .catalog__wrapper
+                      div
+                        +catalogBlock3
+                      div
+                        +catalogBlock4
+                      div
+                        +catalogBlock3
+                      div
+                        +catalogBlock3
+                
+                #singleTab5.tab-pane(role='tabpanel')
+                  
+                  .h2 Обзоры
+                  
+                  .row
+                    .col-sm-4
+                      a(href="https://www.youtube.com/watch?v=rBENIJlMc_M").popup-youtube
+                        img(src="./img/video/video-1.jpg", alt="").img-responsive
+                        i.fas.fa-play-circle
+                    .col-sm-4
+                      a(href="https://www.youtube.com/watch?v=rBENIJlMc_M").popup-youtube
+                        img(src="./img/video/video-2.jpg", alt="").img-responsive
+                        i.fas.fa-play-circle
+                    .col-sm-4
+                      a(href="https://www.youtube.com/watch?v=rBENIJlMc_M").popup-youtube
+                        img(src="./img/video/video-3.jpg", alt="").img-responsive
+                        i.fas.fa-play-circle
+                
+                #singleTab6.tab-pane(role='tabpanel')
+                  
+                  .h2 Загрузка инструкций
+                  
+                  .single-product__load
+                    div
+                      a(href="#!").loader__download-block
+                        +iconLoade1 
+                        span
+                          strong Прошивка
+                            i.fas.fa-level-down-alt
+                          small ZIP 1 Mb
+                    div
+                      a(href="#!").loader__download-block
+                        +iconLoader3
+                        span
+                          strong Программа обновления прошивки 
+                            i.fas.fa-level-down-alt
+                          small ZIP 1 Mb
+                    div
+                      a(href="#!").loader__download-block
+                        +iconLoader2
+                        span
+                          strong Инструкция по прошивке
+                            i.fas.fa-level-down-alt
+                          small PDF 1 Mb
+                    div
+                      a(href="#!").loader__download-block
+                        +iconLoader4
+                        span
+                          strong Драйвер для ПК
+                            i.fas.fa-level-down-alt
+                          small ZIP 1 Mb
+
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

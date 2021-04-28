@@ -1,0 +1,204 @@
+/* header */
+.header
+  position: fixed
+  z-index: 1000
+  left: 0
+  right: 0
+  top: 0
+  height: 95px
+  box-shadow: 0 0 0 rgba($color-ccc,0)
+  // transition: background 0.35s, box-shadow 0.35s
+  flex-shrink: 0
+  &__logo
+    padding: 33px 0
+    a
+      display: inline-block
+    svg
+      width: 95px
+      height: 25px
+      fill: $color-green
+      display: block
+
+  &-separator
+    height: 95px
+    flex-shrink: 0
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+  &__cart
+    position: relative
+    z-index: 10
+    &-body
+      max-height: 450px
+      overflow-y: auto
+      margin: 0 -20px
+      padding: 0 20px
+      &::-webkit-scrollbar-track
+        background-color: #f5f5f5
+      &::-webkit-scrollbar-thumb
+        background-color: $color-green
+        border-radius: 4px
+      &::-webkit-scrollbar
+        width: 4px
+    &-top
+      // height: 95px
+      // background: pink
+      text-decoration: none
+      display: inline-block
+      position: relative
+      width: 47px
+      text-align: right
+      padding-right: 19px
+      margin-top: 33px
+      .fas
+        font-size: 25px
+        color: $color-white
+        transition: color 0.35s
+      span
+        position: absolute
+        top: -10px
+        right: 10px
+        height: 20px
+        min-width: 20px
+        text-align: center
+        padding: 0 2px
+        line-height: 20px
+        color: $color-white
+        font-size: 12px
+        background: $color-green
+        border-radius: 50%
+        transition: background 0.35s
+    &-popup
+      position: absolute
+      top: 95px
+      right: 0
+      width: 350px
+      background: $color-white
+      box-shadow: 0 0 16px $color-ccc
+      padding: 0 20px
+      opacity: 0
+      visibility: hidden
+      transition: all 0.35s
+    &-title
+      border-bottom: 1px solid $color-eee
+      height: 52px
+      line-height: 52px
+      text-transform: uppercase
+      font-size: 16px
+      font-weight: 500
+      text-align: center
+      margin-bottom: 20px
+    &-footer
+      border-top: 1px solid $color-eee
+      padding: 20px 0
+      +clearfix
+      .btn
+        padding-left: 10px
+        padding-right: 10px
+        &:first-child
+          float: left
+        &:last-child
+          float: right
+    &-total
+      text-align: center
+      border-top: 1px solid $color-eee
+      height: 56px
+      line-height: 56px
+      font-size: 14px
+      strong
+        font-weight: 16px
+        font-weight: 400
+        color: $color-green
+    &-img
+      flex-shrink: 0
+      position: relative
+      img
+        max-width: 100px
+        border: 1px solid #f1f1f1
+    &-row
+      display: flex
+      margin-bottom: 20px
+    &-content
+      padding-left: 20px
+    &-name
+      font-size: 14px
+      color: $color-666
+      margin-bottom: 8px
+    &-info
+      font-size: 12px
+      margin-bottom: 5px
+      color: $color-999
+      span
+        color: $primary-color
+    &-delete
+      position: absolute
+      right: 0px
+      top: 0px
+      text-decoration: none
+      font-size: 14px
+      color: $primary-color
+      padding: 10px
+      z-index: 10
+      &:hover
+        color: red
+      i
+        display: block
+    &-close
+      display: none
+      position: absolute
+      right: 21px
+      top: 0
+      font-size: 20px
+      color: $color-green
+    &.is-open
+      .header__cart-popup
+        opacity: 1
+        visibility: visible
+
+  &.is-scroll, &--inside, &.is-bg
+    background: $color-white
+    box-shadow: 0 5px 7px rgba($color-ccc,0.6)
+    .header
+      &__cart
+        &-top
+          .fas
+            color: $color-green
+          span
+            background: $color-666
+    .menu
+      &__li
+        &1
+      &__a
+        &1
+          color: $primary-color
+          &:hover, &:focus
+            color: $color-green
+      &__div2
+        border-top-color: $color-green
+
+  &__mobile
+    background: none
+    padding: 0
+    margin: 18px 0 !important
+    border: 0
+    color: $color-green
+    font-size: 25px
+    height: 19px
+    display: none !important
+
+.shadow-background
+  position: fixed
+  z-index: 800
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba($primary-color,0.2)
+  opacity: 0
+  visibility: hidden
+  transition: all 0.35s
+  &.is-open
+    opacity: 1
+    visibility: visible

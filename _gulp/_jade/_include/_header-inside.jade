@@ -1,0 +1,113 @@
+// Header
+header.header.header--inside
+  .container
+    
+    .header__wrapper
+      div
+        .header__logo
+          a(href="#!")
+            +logo
+      div
+        button(type="button").header__mobile.hamburger.hamburger--spin.js-hamburger
+          .hamburger-box
+            .hamburger-inner
+        nav.header__navigation
+          ul.menu__ul1
+            li.menu__li1
+              a(href="#!").menu__a1 Продукты
+                i.fas.fa-chevron-down
+              .menu__div2.menu__div2--1
+                .menu__div2-wrapper
+                  ul.menu__ul2
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li1-category1.png").menu__a2 Смартфоны
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li1-categoryXiaomi.png").menu__a2 Смартфоны Xiaomi
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li1-category2.png").menu__a2 Защищенные телефоны
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li1-category3.png").menu__a2 Телефоны с кнопкой SOS
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li1-category4.png").menu__a2 Аксессуары
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li1-category5.png").menu__a2 Запасные части
+                  img(src="", alt="").menu__img
+            li.menu__li1
+              a(href="#!").menu__a1 О нас
+            li.menu__li1
+              a(href="#!").menu__a1 Поддержка
+                i.fas.fa-chevron-down
+              .menu__div2.menu__div2--2
+                .menu__div2-wrapper
+                  ul.menu__ul2
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li2-category1.png").menu__a2 Гарантийные условия
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li2-category2.png").menu__a2 Сервисное обслуживание
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li2-category3.png").menu__a2 Загрузки
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li2-category4.png").menu__a2 Возврат товара
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li2-category5.png").menu__a2 Доставка и оплата
+                  img(src="", alt="").menu__img
+            li.menu__li1
+              a(href="#!").menu__a1 Компания
+                i.fas.fa-chevron-down
+              .menu__div2.menu__div2--3
+                .menu__div2-wrapper
+                  ul.menu__ul2
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li3-category1.png").menu__a2 Новости
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li3-category2.png").menu__a2 Акции
+                    li.menu__li2
+                      a(href="#!" data-img="./img/menu/menu-li3-category3.png").menu__a2 Контакты
+                  img(src="", alt="").menu__img
+      div
+        .header__cart
+          a(href="#!").header__cart-top
+            i.fas.fa-shopping-cart
+            span 1
+          .header__cart-popup
+            .header__cart-title Ваша корзина
+              .header__cart-close
+                i.fas.fa-times
+            .header__cart-body
+              - for(var i=0; i<10; i++) {
+              .header__cart-row
+                .header__cart-img
+                  a(href="#!").header__cart-delete
+                    i.fas.fa-times
+                  a(href="#!")
+                    img(src="./img/catalog/catalog-1.png", alt="")
+                .header__cart-content
+                  .header__cart-name Nous Optimum NS5008
+                  .header__cart-info Цвет: 
+                    span Black
+                  .header__cart-info Кол-во, шт:  
+                    span 1
+                  .header__cart-info Сумма, грн: 
+                    span 1 699
+              - } 
+            .header__cart-total Общая сумма: 
+              strong 3 398 грн
+            .header__cart-footer
+              a(href="#!").btn.btn--border Перейти в корзину
+              a(href="#!").btn.btn--border Оформить заказ
+    
+    nav.menu__mobile
+      .menu__mobile-wrapper
+        ul
+          li: a(href="#!") Продукты
+          li: a(href="#!") Смартфоны NOUS
+          li: a(href="#!") Смартфоны Xiaomi 
+          li: a(href="#!") Смартфоны Doogee 
+          li: a(href="#!") О нас
+          li: a(href="#!") Гарантийные условия
+          li: a(href="#!") Возврат товара
+          li: a(href="#!") Доставка и оплата
+          li: a(href="#!") Акции
+          li: a(href="#!") Контакты 
+     
+.shadow-background

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Загрузки - Nous</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./font/fontawesome/css/all.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick-theme.css">
+        <link rel="stylesheet" href="./js/libs/selectric/selectric.css">
+        <link rel="stylesheet" href="./js/libs/selectric/theme.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/add.css">
+    </head>
+    <body>
+        <!-- Preloader-->
+        <div class="loader">
+            <div class="loader__block"></div>
+        </div>
+        <!-- Header-->
+        <header class="header header--inside">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div>
+                        <div class="header__logo"><a href="#!">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 207.2 59.7">
+                                            <g>
+                                                <path d="M0 59.7V20C0 14.5 2 9.8 5.9 5.9 9.8 2 14.5 0 20 0s10.3 2 14.2 5.9c3.9 3.9 5.9 8.6 5.9 14.2v35.5l-8.5 4.1V20.2c-.1-3.3-1.2-6-3.4-8.2-2.3-2.2-5-3.4-8-3.4-3.2 0-5.9 1.1-8.3 3.4-2.3 2.2-3.4 4.9-3.4 8v35.5L0 59.7zM134.9 51c3 0 5.6-1.1 7.8-3.4 2.2-2.2 3.4-4.9 3.4-8V4.1l8.5-4.1v39.6c0 5.5-2 10.3-5.9 14.2-3.9 3.9-8.6 5.9-14.2 5.9-5.5 0-10.3-2-14.2-5.9-3.9-3.9-5.9-8.6-5.9-14.2V19.5l8.5-4.1v24.1c.1 3.3 1.2 6 3.4 8.2 2.3 2.2 5.2 3.3 8.6 3.3zM187.8 51c3.2 0 5.8-1.1 7.8-3.2 2.1-2.2 3.1-4.6 3.1-7.3 0-2.4-1-4.6-3.1-6.8-2.1-2.1-4.9-3.3-8.5-3.5-4.4-.2-7.9-1.5-10.5-4-2.5-2.4-4-5.8-4.5-10.2 0-.3-.1-.6-.1-1 .2-3.9 1.7-7.3 4.7-10.3 3-3.2 6.7-4.7 11-4.7 4.6 0 8.3 1.6 11 4.7 1.8 2.1 3.2 4.8 4.2 8.1-1 .5-7.6 3.7-7.6 3.7-.6-2.3-1.4-4.2-2.6-5.6-1.3-1.5-3-2.2-5.1-2.2-2 0-3.7.7-5.1 2.2-1.3 1.4-2 2.9-2 4.6v.3c0 1.7.6 3.2 1.9 4.4 1.2 1.2 2.9 1.9 5.1 2.1 6.2.7 10.9 2.6 14.2 5.7 3.6 3.5 5.4 7.7 5.4 12.7v.3c-.1 4.8-1.8 9-5.3 12.8-3.6 3.9-8.3 5.9-14.2 5.9-5.6 0-10.2-1.9-13.7-5.8-4-4.2-6.2-9.1-6.4-14.4l8.5-4.1.1 4.1c0 3.3 1.2 6 3.4 8.2 2.3 2.2 5 3.3 8.3 3.3zM65.7 34.8V19.9c0-3 1.2-5.7 3.4-7.9s4.8-3.4 7.8-3.4c3.4 0 6.2 1.1 8.5 3.4 2.2 2.2 3.3 4.9 3.4 8.2v3.4l8.5-4.1c-.1-5.3-2.1-9.9-5.9-13.7C87.5 2 82.8 0 77.2 0 71.7 0 67 2 63.1 5.9c-3.9 3.9-5.9 8.6-5.9 14.2v18.8l8.5-4.1zM88.8 32.1v7.3c-.1 3.3-1.2 6-3.4 8.2-2.3 2.2-4.9 3.4-7.9 3.4-3.1 0-5.8-1.1-8.3-3.4-1.4-1.3-2.4-2.9-3-4.6l-7.8 3.7c1 2.6 2.5 4.9 4.6 7 3.9 3.9 8.6 5.9 14.2 5.9 5.5 0 10.3-2 14.2-5.9 3.9-3.9 5.9-8.6 5.9-14.2V28.1l-8.5 4z"></path>
+                                            </g>
+                                        </svg></a></div>
+                    </div>
+                    <div>
+                        <button type="button" class="header__mobile hamburger hamburger--spin js-hamburger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </button>
+                        <nav class="header__navigation">
+                            <ul class="menu__ul1">
+                                <li class="menu__li1"><a href="#!" class="menu__a1">Продукты<i class="fas fa-chevron-down"></i></a>
+                                    <div class="menu__div2 menu__div2--1">
+                                        <div class="menu__div2-wrapper">
+                                            <ul class="menu__ul2">
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category1.png" class="menu__a2">Смартфоны</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-categoryXiaomi.png" class="menu__a2">Смартфоны Xiaomi</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category2.png" class="menu__a2">Защищенные телефоны</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category3.png" class="menu__a2">Телефоны с кнопкой SOS</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category4.png" class="menu__a2">Аксессуары</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li1-category5.png" class="menu__a2">Запасные части</a></li>
+                                            </ul><img src="" alt="" class="menu__img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__li1"><a href="#!" class="menu__a1">О нас</a></li>
+                                <li class="menu__li1"><a href="#!" class="menu__a1">Поддержка<i class="fas fa-chevron-down"></i></a>
+                                    <div class="menu__div2 menu__div2--2">
+                                        <div class="menu__div2-wrapper">
+                                            <ul class="menu__ul2">
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category1.png" class="menu__a2">Гарантийные условия</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category2.png" class="menu__a2">Сервисное обслуживание</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category3.png" class="menu__a2">Загрузки</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category4.png" class="menu__a2">Возврат товара</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li2-category5.png" class="menu__a2">Доставка и оплата</a></li>
+                                            </ul><img src="" alt="" class="menu__img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__li1"><a href="#!" class="menu__a1">Компания<i class="fas fa-chevron-down"></i></a>
+                                    <div class="menu__div2 menu__div2--3">
+                                        <div class="menu__div2-wrapper">
+                                            <ul class="menu__ul2">
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li3-category1.png" class="menu__a2">Новости</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li3-category2.png" class="menu__a2">Акции</a></li>
+                                                <li class="menu__li2"><a href="#!" data-img="./img/menu/menu-li3-category3.png" class="menu__a2">Контакты</a></li>
+                                            </ul><img src="" alt="" class="menu__img">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="header__cart"><a href="#!" class="header__cart-top"><i class="fas fa-shopping-cart"></i><span>1</span></a>
+                            <div class="header__cart-popup">
+                                <div class="header__cart-title">Ваша корзина
+                                    <div class="header__cart-close"><i class="fas fa-times"></i></div>
+                                </div>
+                                <div class="header__cart-body">
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-row">
+                                        <div class="header__cart-img"><a href="#!" class="header__cart-delete"><i class="fas fa-times"></i></a><a href="#!"><img src="./img/catalog/catalog-1.png" alt=""></a></div>
+                                        <div class="header__cart-content">
+                                            <div class="header__cart-name">Nous Optimum NS5008</div>
+                                            <div class="header__cart-info">Цвет: <span>Black</span></div>
+                                            <div class="header__cart-info">Кол-во, шт:  <span>1</span></div>
+                                            <div class="header__cart-info">Сумма, грн: <span>1 699</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cart-total">Общая сумма: <strong>3 398 грн</strong></div>
+                                <div class="header__cart-footer"><a href="#!" class="btn btn--border">Перейти в корзину</a><a href="#!" class="btn btn--border">Оформить заказ</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menu__mobile">
+                    <div class="menu__mobile-wrapper">
+                        <ul>
+                            <li><a href="#!">Продукты</a></li>
+                            <li><a href="#!">Смартфоны NOUS</a></li>
+                            <li><a href="#!">Смартфоны Xiaomi </a></li>
+                            <li><a href="#!">Смартфоны Doogee </a></li>
+                            <li><a href="#!">О нас</a></li>
+                            <li><a href="#!">Гарантийные условия</a></li>
+                            <li><a href="#!">Возврат товара</a></li>
+                            <li><a href="#!">Доставка и оплата</a></li>
+                            <li><a href="#!">Акции</a></li>
+                            <li><a href="#!">Контакты </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="shadow-background"></div>
+        <div class="header-separator"></div>
+        <!-- Content-->
+        <div class="content">
+            <div style="background-image: url('./img/catalog/download.jpg')" class="content__banner content__banner--banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <div class="content__banner-title">Lorem ipsum dolor sit amet, consectetur adipiscing </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content__wrapper">
+                    <div class="loader__model">
+                        <div>
+                            <div class="loader__model-img"><img src="./img/loader/loader-img-1.png" alt=""></div>
+                        </div>
+                        <div>
+                            <div class="h2">Выберите устройство</div>
+                            <select class="selectric">
+                                <option disabled>Категория</option>
+                                <option>Смартфоны 1</option>
+                                <option>Смартфоны 2</option>
+                                <option>Смартфоны 3</option>
+                                <option>Смартфоны 4</option>
+                                <option>Смартфоны 5</option>
+                            </select>
+                            <select class="selectric">
+                                <option disabled>Модель</option>
+                                <option>Модель 1</option>
+                                <option>Модель 2</option>
+                                <option>Модель 3</option>
+                                <option>Модель 4</option>
+                                <option>Модель 5</option>
+                                <option>Модель 6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="h2">Ответы на часто задаваемые вопросы</div>
+                            <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+                                <div class="panel panel-default">
+                                    <div id="headingOne" role="tab" class="panel-heading">
+                                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-chevron-down"></i>Как сделать сброс к заводским настройкам?</a></h4>
+                                    </div>
+                                    <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="headingTwo" role="tab" class="panel-heading">
+                                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed"><i class="fas fa-chevron-down"></i>Где мне найти прошивку?</a></h4>
+                                    </div>
+                                    <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="headingThree" role="tab" class="panel-heading">
+                                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed"><i class="fas fa-chevron-down"></i>Где мне найти прошивку?</a></h4>
+                                    </div>
+                                    <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="headingFour" role="tab" class="panel-heading">
+                                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed"><i class="fas fa-chevron-down"></i>Где мне найти прошивку?</a></h4>
+                                    </div>
+                                    <div id="collapseFour" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="headingFive" role="tab" class="panel-heading">
+                                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed"><i class="fas fa-chevron-down"></i>Где мне найти прошивку?</a></h4>
+                                    </div>
+                                    <div id="collapseFive" role="tabpanel" aria-labelledby="headingFive" class="panel-collapse collapse">
+                                        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact__block">
+                                <form action="#">
+                                    <fieldset>
+                                        <legend>Обратная связь</legend>
+                                        <div class="form-group">
+                                            <label class="hidden">Введите Имя</label>
+                                            <input type="text" placeholder="Введите Имя" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="hidden">Введите Email</label>
+                                            <input type="text" placeholder="Введите Email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="hidden">Телефон</label>
+                                            <input type="text" placeholder="+38 (___) ___ __ __" class="form-control phone-mask">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="hidden">Сообщение</label>
+                                            <textarea placeholder="Введите Имя" class="form-control"></textarea>
+                                        </div>
+                                        <button type="button" class="btn btn--green">Отправить</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="subscription">
+                        <div class="container">
+                            <div class="subscription__wrapper">
+                                <div>
+                                    <div class="subscription__body">
+                                        <div>
+                                            <div class="subscription__label">Получите <strong>скидку 10% </strong><br>за подписку на новости</div>
+                                        </div>
+                                        <div>
+                                            <!-- .subscription__thank.is-active-->
+                                            <div class="subscription__thank">
+                                                <div>Спасибо за подписку! Проверьте почту, мы отправили Вам промо-кодом на <strong>скидку 10%</strong></div>
+                                            </div>
+                                            <form action="#" class="subscription__form">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Введите Email" class="subscription__input form-control">
+                                                    <button type="submit" class="subscription__btn"><i class="fab fa-telegram-plane"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- Footer-->
+        <!--footer.footer
+        .container
+          .footer__top
+            .advantages
+              div
+                .advantages__block
+                  +iconAdvantages1
+                  span Официальный 
+                    br
+                    | магазин TM NOUS
+              div
+                .advantages__block
+                  +iconAdvantages2
+                  span Гарантия Возврата 
+                    br
+                    | в течении 14 дней
+              div
+                .advantages__block
+                  +iconAdvantages3
+                  span Быстрая доставка 
+                    br
+                    | от 1-2 дней
+              div
+                .advantages__block
+                  +iconAdvantages4
+                  span Послепродажная поддержка 
+                    br
+                    | 7 дней в неделю
+        
+          .footer__center
+            div
+              .footer__logo
+                +logo
+            div
+              nav.footer__navigation
+                ul
+                  li: a(href="#!") Продукты
+                  li: a(href="#!") О нас
+                  li: a(href="#!") Поддержка
+                  li: a(href="#!") Компания
+            div
+              .footer__social
+                a(href="#!" target="_blank")
+                  i.fab.fa-facebook-f
+                a(href="#!" target="_blank")
+                  i.fab.fa-twitter
+                a(href="#!" target="_blank")
+                  i.fab.fa-youtube
+          .footer__bottom
+            .footer__copyright Copyright © 2018 Nous
+            .footer__development Разработка 
+              a(href="#!" target="_blank") DARTC
+        
+        -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="advantages">
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M12.713 38.541c.025.01.047.023.074.031l.008.002A19.031 19.031 0 0 0 20.035 40a19.03 19.03 0 0 0 7.345-1.467l.012-.003c.025-.008.046-.02.07-.029l.036-.015c.025-.012.052-.021.076-.034 6.814-2.932 11.599-9.711 11.599-17.588 0-4.245-1.361-8.265-3.937-11.626a.935.935 0 1 0-1.486 1.138 17.097 17.097 0 0 1 3.55 10.488c0 6.774-3.923 12.647-9.615 15.473L22.478 19.69l1.219-3.854L28.5 18.5a.936.936 0 0 0 1.362-.591l3.423-13.662a.935.935 0 0 0-.054-.61L31.852.554a.936.936 0 0 0-.712-.543c-.032-.005-.064-.001-.096-.002C31.028.005 31.02 0 30.998 0H9.047c-.025 0-.034.005-.05.008-.03.001-.06-.002-.09.002a.939.939 0 0 0-.714.544l-1.38 3.082a.942.942 0 0 0-.053.61l3.423 13.662a.939.939 0 0 0 .908.708.926.926 0 0 0 .454-.118l4.843-2.686 1.226 3.878-5.133 16.694c-5.744-2.808-9.71-8.709-9.71-15.522 0-3.831 1.229-7.459 3.554-10.492a.936.936 0 0 0-1.486-1.139 18.958 18.958 0 0 0-3.94 11.631c0 7.96 4.886 14.798 11.814 17.679zm15.63-22.27l-6.465-3.585 6.447-7.306c.014-.014.03-.025.044-.04l2.37-2.692.652 1.458-3.048 12.165zm-8.32-4.312l-5.561-6.302h11.123l-5.562 6.302zm8.9-10.087l-1.687 1.914H12.815l-1.691-1.914h17.8zM8.656 4.105l.653-1.46 8.86 10.04-6.465 3.585L8.655 4.105zm11.368 9.692l2.003 1.111-1.203 3.805h-1.555l-1.21-3.827 1.965-1.089zm-.75 6.864h1.548l5.137 16.421a17.16 17.16 0 0 1-5.922 1.047c-2.042 0-4.002-.359-5.822-1.013l5.06-16.455z"></path>
+                                                <path d="M28.594 25.911v-2.146h3.164a.936.936 0 1 0 0-1.872h-4.1a.936.936 0 0 0-.936.936v3.64c0 .344.188.659.49.823l3.342 1.807a.937.937 0 0 0 .89 0l3.342-1.807a.936.936 0 0 0 .49-.823v-3.64a.936.936 0 1 0-1.871 0v3.082l-2.406 1.3-2.405-1.3z"></path>
+                                            </g>
+                                        </svg><span>Официальный <br>магазин TM NOUS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M20.912 4.797V.907a.91.91 0 0 0-.909-.908.894.894 0 0 0-.509.16L12.52 4.932a.908.908 0 0 0-.01 1.489l6.973 4.918a.9.9 0 0 0 .52.167.91.91 0 0 0 .91-.908V6.633c8.212.482 14.63 7.382 14.63 15.754 0 8.712-6.97 15.801-15.537 15.801S4.47 31.099 4.47 22.387a.906.906 0 0 0-1.811 0C2.66 32.099 10.44 40 20.006 40c9.566 0 17.347-7.901 17.347-17.613 0-9.4-7.214-17.108-16.44-17.59zm-6.292.894l4.481-3.065V8.85l-4.48-3.159z"></path>
+                                                <path d="M11.608 28.874c0 .648.527 1.175 1.175 1.175H26.23c.648 0 1.175-.527 1.175-1.175v-7.968h.538v-5.04H11.07v5.04h.538v7.968zm1.812-.637v-7.331h12.173v7.331H13.42zm12.71-10.558v1.414H12.882v-1.414H26.13z"></path>
+                                            </g>
+                                        </svg><span>Гарантия Возврата <br>в течении 14 дней</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M10.283 9.122h3.349c.377 0 .708-.33.708-.708a.725.725 0 0 0-.708-.708h-3.349a.726.726 0 0 0-.708.708c0 .378.331.708.708.708zM39.528 19.075l-3.585-5.613a2.079 2.079 0 0 0-1.792-.991h-5V9.783c0-1.18-.943-2.123-2.123-2.123H16.462a.726.726 0 0 0-.708.708c0 .378.33.708.708.708h10.566c.377 0 .708.33.708.708v16.934H13.868c-.613-1.038-1.745-1.792-3.066-1.792a3.493 3.493 0 0 0-3.066 1.792H5.991a.726.726 0 0 1-.708-.708v-2.453a.726.726 0 0 0-.708-.708.726.726 0 0 0-.708.708v2.453c0 1.179.943 2.123 2.123 2.123h1.274v.33c0 1.934 1.604 3.538 3.538 3.538 1.934 0 3.538-1.604 3.538-3.538v-.33H29.151v.33c0 1.934 1.604 3.538 3.538 3.538 1.934 0 3.538-1.604 3.538-3.538v-.33h1.651a2.114 2.114 0 0 0 2.123-2.123v-5.755a3.65 3.65 0 0 0-.473-1.18zM10.802 30.632a2.114 2.114 0 0 1-2.123-2.123c0-1.179.943-2.123 2.123-2.123a2.05 2.05 0 0 1 1.887 1.179c0 .094.047.236.142.33.047.189.094.425.094.613 0 1.18-.944 2.124-2.123 2.124zm21.792 0a2.114 2.114 0 0 1-2.123-2.123c0-1.179.943-2.123 2.123-2.123 1.179 0 2.123.943 2.123 2.123a2.114 2.114 0 0 1-2.123 2.123zm5.897-4.576c0 .377-.33.708-.708.708h-2.075c-.613-1.038-1.745-1.792-3.066-1.792a3.493 3.493 0 0 0-3.066 1.792h-.33v-12.83h4.953c.236 0 .472.142.613.33l3.538 5.613c.094.094.094.236.094.377v5.802h.047z"></path>
+                                                <path d="M33.726 15.302c-.142-.189-.377-.33-.613-.33h-1.981a.726.726 0 0 0-.708.708v4.245c0 .377.33.708.708.708h4.67c.377 0 .708-.33.708-.708a.605.605 0 0 0-.189-.472l-2.595-4.151zm-1.839 3.915v-2.83h.849l1.792 2.83h-2.641zM1.934 11.811h14.481c.377 0 .708-.33.708-.708a.725.725 0 0 0-.708-.708H1.934a.726.726 0 0 0-.708.708c0 .378.283.708.708.708zM5.66 19.122c0 .377.33.708.708.708h14.481c.377 0 .708-.33.708-.708a.726.726 0 0 0-.708-.708H6.368a.727.727 0 0 0-.708.708zM4.104 19.122a.726.726 0 0 0-.708-.708H.708a.727.727 0 0 0-.708.708c0 .377.33.708.708.708h2.689a.695.695 0 0 0 .707-.708zM14.953 15.962c.377 0 .708-.33.708-.708a.726.726 0 0 0-.708-.708H7.594a.726.726 0 0 0-.708.708c0 .377.33.708.708.708h7.359z"></path>
+                                            </g>
+                                        </svg><span>Быстрая доставка <br>от 1-2 дней</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="advantages__block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40">
+                                            <g>
+                                                <path d="M26.715 28.06a.763.763 0 0 0 .762-.763v-7.96a.763.763 0 0 0-.762-.763H13.447a.763.763 0 0 0-.762.763v11.941a.761.761 0 0 0 1.3.54l3.716-3.757h9.014zm-9.827-1.302l-2.68 2.679V20.1h11.743v6.434h-8.524a.766.766 0 0 0-.54.224z"></path>
+                                                <path d="M17.427 22.753h5.308a.763.763 0 0 0 0-1.526h-5.308a.763.763 0 0 0 0 1.526zM24.06 23.881H16.1a.764.764 0 0 0 0 1.526h7.96a.764.764 0 0 0 0-1.526zM7.476 23.218H4.824a.764.764 0 0 0 0 1.526h2.653a.764.764 0 0 0-.001-1.526zM7.476 19.901H4.824a.764.764 0 0 0 0 1.526h2.653a.764.764 0 0 0-.001-1.526zM7.476 26.534H4.824a.764.764 0 0 0 0 1.526h2.653a.764.764 0 0 0-.001-1.526z"></path>
+                                                <path d="M36.863 15.921H36.1v-.564C36.1 7.033 28.765 0 20.08 0 11.398 0 4.06 7.033 4.06 15.357v.564h-.762a1.893 1.893 0 0 0-1.891 1.891v12.337c0 1.043.848 1.891 1.89 1.891h5.705a1.893 1.893 0 0 0 1.89-1.891V17.812a1.893 1.893 0 0 0-1.89-1.891h-.763v-.564c0-5.955 5.534-11.178 11.84-11.178 6.308 0 11.842 5.223 11.842 11.178v.564h-.763a1.893 1.893 0 0 0-1.891 1.891v12.337c0 1.043.848 1.891 1.89 1.891h2.09v.564a3.885 3.885 0 0 1-3.881 3.881H24.04a2.748 2.748 0 0 0-2.635-1.99h-2.653A2.756 2.756 0 0 0 16 37.248 2.756 2.756 0 0 0 18.754 40h2.653a2.748 2.748 0 0 0 2.635-1.99h5.325a5.412 5.412 0 0 0 5.407-5.406v-.564h2.089a1.893 1.893 0 0 0 1.89-1.891V17.812a1.893 1.893 0 0 0-1.89-1.891zm-6.07 1.891c0-.202.165-.365.366-.365h5.704c.2 0 .365.164.365.365v12.337a.365.365 0 0 1-.365.365h-5.704a.366.366 0 0 1-.365-.365V17.812zM9.368 30.149a.365.365 0 0 1-.365.365H3.298a.366.366 0 0 1-.365-.365V17.812c0-.202.164-.365.365-.365h5.704c.2 0 .365.164.365.365v12.337zM6.715 15.357v.564h-1.13v-.564c0-7.497 6.638-13.831 14.495-13.831 7.857 0 14.496 6.334 14.496 13.831v.564h-1.13v-.564c0-6.886-6.12-12.704-13.365-12.704S6.715 8.471 6.715 15.357zm14.692 23.118h-2.653a1.23 1.23 0 0 1-1.228-1.227 1.23 1.23 0 0 1 1.228-1.228h2.653a1.23 1.23 0 0 1 1.228 1.228 1.23 1.23 0 0 1-1.228 1.227z"></path>
+                                                <path d="M32.685 24.743h2.653a.764.764 0 0 0 0-1.526h-2.653a.764.764 0 0 0 0 1.526zM32.685 21.427h2.653a.764.764 0 0 0 0-1.526h-2.653a.764.764 0 0 0 0 1.526zM32.685 28.06h2.653a.764.764 0 0 0 0-1.526h-2.653a.764.764 0 0 0 0 1.526z"></path>
+                                            </g>
+                                        </svg><span>Послепродажная поддержка <br>7 дней в неделю</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-new">
+                    <div class="footer-new__center">
+                        <dl class="toggle false">
+                            <dt><i class="plus"></i>Продукция</dt>
+                            <dd><a href="#!">Смартфоны NOUS</a></dd>
+                            <dd><a href="#!">Смартфоны Xiaomi </a></dd>
+                            <dd><a href="#!">Смартфоны Doogee </a></dd>
+                            <dd><a href="#!">Защищенные телефоны</a></dd>
+                            <dd><a href="#!">Телефоны с кнопкой SOS</a></dd>
+                            <dd><a href="#!">Аксессуары</a></dd>
+                            <dd><a href="#!">Запасные части</a></dd>
+                        </dl>
+                        <dl class="toggle false">
+                            <dt><i class="plus"></i>Поддержка</dt>
+                            <dd><a href="#!">Гарантийные условия</a></dd>
+                            <dd><a href="#!">Сервисное обслуживание</a></dd>
+                            <dd><a href="#!">Загрузки</a></dd>
+                            <dd><a href="#!">Возврат товара</a></dd>
+                            <dd><a href="#!">Доставка и оплата</a></dd>
+                        </dl>
+                        <dl class="toggle false">
+                            <dt><i class="plus"></i>Компания</dt>
+                            <dd><a href="#!">О нас</a></dd>
+                            <dd><a href="#!">Новости</a></dd>
+                            <dd><a href="#!">Акции</a></dd>
+                            <dd><a href="#!">Контакты</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-new__right">
+                        <div class="footer__logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 207.2 59.7">
+                                        <g>
+                                            <path d="M0 59.7V20C0 14.5 2 9.8 5.9 5.9 9.8 2 14.5 0 20 0s10.3 2 14.2 5.9c3.9 3.9 5.9 8.6 5.9 14.2v35.5l-8.5 4.1V20.2c-.1-3.3-1.2-6-3.4-8.2-2.3-2.2-5-3.4-8-3.4-3.2 0-5.9 1.1-8.3 3.4-2.3 2.2-3.4 4.9-3.4 8v35.5L0 59.7zM134.9 51c3 0 5.6-1.1 7.8-3.4 2.2-2.2 3.4-4.9 3.4-8V4.1l8.5-4.1v39.6c0 5.5-2 10.3-5.9 14.2-3.9 3.9-8.6 5.9-14.2 5.9-5.5 0-10.3-2-14.2-5.9-3.9-3.9-5.9-8.6-5.9-14.2V19.5l8.5-4.1v24.1c.1 3.3 1.2 6 3.4 8.2 2.3 2.2 5.2 3.3 8.6 3.3zM187.8 51c3.2 0 5.8-1.1 7.8-3.2 2.1-2.2 3.1-4.6 3.1-7.3 0-2.4-1-4.6-3.1-6.8-2.1-2.1-4.9-3.3-8.5-3.5-4.4-.2-7.9-1.5-10.5-4-2.5-2.4-4-5.8-4.5-10.2 0-.3-.1-.6-.1-1 .2-3.9 1.7-7.3 4.7-10.3 3-3.2 6.7-4.7 11-4.7 4.6 0 8.3 1.6 11 4.7 1.8 2.1 3.2 4.8 4.2 8.1-1 .5-7.6 3.7-7.6 3.7-.6-2.3-1.4-4.2-2.6-5.6-1.3-1.5-3-2.2-5.1-2.2-2 0-3.7.7-5.1 2.2-1.3 1.4-2 2.9-2 4.6v.3c0 1.7.6 3.2 1.9 4.4 1.2 1.2 2.9 1.9 5.1 2.1 6.2.7 10.9 2.6 14.2 5.7 3.6 3.5 5.4 7.7 5.4 12.7v.3c-.1 4.8-1.8 9-5.3 12.8-3.6 3.9-8.3 5.9-14.2 5.9-5.6 0-10.2-1.9-13.7-5.8-4-4.2-6.2-9.1-6.4-14.4l8.5-4.1.1 4.1c0 3.3 1.2 6 3.4 8.2 2.3 2.2 5 3.3 8.3 3.3zM65.7 34.8V19.9c0-3 1.2-5.7 3.4-7.9s4.8-3.4 7.8-3.4c3.4 0 6.2 1.1 8.5 3.4 2.2 2.2 3.3 4.9 3.4 8.2v3.4l8.5-4.1c-.1-5.3-2.1-9.9-5.9-13.7C87.5 2 82.8 0 77.2 0 71.7 0 67 2 63.1 5.9c-3.9 3.9-5.9 8.6-5.9 14.2v18.8l8.5-4.1zM88.8 32.1v7.3c-.1 3.3-1.2 6-3.4 8.2-2.3 2.2-4.9 3.4-7.9 3.4-3.1 0-5.8-1.1-8.3-3.4-1.4-1.3-2.4-2.9-3-4.6l-7.8 3.7c1 2.6 2.5 4.9 4.6 7 3.9 3.9 8.6 5.9 14.2 5.9 5.5 0 10.3-2 14.2-5.9 3.9-3.9 5.9-8.6 5.9-14.2V28.1l-8.5 4z"></path>
+                                        </g>
+                                    </svg>
+                        </div>
+                        <div class="footer__social"><a href="#!" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="#!" target="_blank"><i class="fab fa-twitter"></i></a><a href="#!" target="_blank"><i class="fab fa-youtube"></i></a></div>
+                        <div class="footer__copyright">Copyright © 2018 Nous</div>
+                        <div class="footer__development">Разработка <a href="#!" target="_blank">DARTC</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--[if gte IE 9]
+        <script src='./js/libs/html5shiv/es5-shim.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+        <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+        
+        -->
+        <!-- Load Scripts-->
+        <!-- Footer js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./js/libs/plugins-scroll/plugins-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="./js/libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+        <script src="./js/libs/selectric/jquery.selectric.min.js"></script>
+        <script src="./js/libs/slick/slick.min.js"></script>
+        <script src="./js/libs/jquery.sticky-kit/jquery.sticky-kit.min.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

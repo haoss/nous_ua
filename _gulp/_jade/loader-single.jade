@@ -1,0 +1,94 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Загрузки' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Загрузки' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .content__banner.content__banner--banner(style="background-image: url('./img/catalog/download.jpg')") 
+        .container
+          .row
+            .col-md-5.col-sm-6
+              .content__banner-title Lorem ipsum dolor sit amet, consectetur adipiscing
+          
+      .container
+        
+        .content__wrapper
+          
+          .loader__download
+            .row
+              .col-md-4.col-sm-5
+                .loader__download-img
+                  img(src="./img/catalog/catalog-1.png", alt="")
+              .col-md-8.col-sm-7
+                
+                .loader__download-title Подержка по продуктам
+                  small Смартфон Nous Optimum NS2414
+                
+                .loader__download-wrapper
+                  a(href="#!").loader__download-block
+                    +iconLoade1 
+                    span
+                      strong Прошивка
+                        i.fas.fa-level-down-alt
+                      small ZIP 1 Mb
+                  a(href="#!").loader__download-block
+                    +iconLoader2
+                    span
+                      strong Инструкция по прошивке
+                        i.fas.fa-level-down-alt
+                      small PDF 1 Mb
+                  a(href="#!").loader__download-block
+                    +iconLoader3
+                    span
+                      strong Программа для  обновления прошивки 
+                        i.fas.fa-level-down-alt
+                      small ZIP 1 Mb
+                  a(href="#!").loader__download-block
+                    +iconLoader4
+                    span
+                      strong Драйвер для ПК
+                        i.fas.fa-level-down-alt
+                      small ZIP 1 Mb
+                  a(href="#!").loader__download-block
+                    +iconLoader5
+                    span
+                      strong Инструкция по эксплуатации
+                        i.fas.fa-level-down-alt
+                      small ZIP 1 Mb
+                
+                a(href="#!").btn.btn--border
+                  i.fas.fa-long-arrow-alt-left
+                  | Вернуться к выбору модели
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

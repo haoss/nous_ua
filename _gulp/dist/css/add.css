@@ -1,0 +1,104 @@
+.pagination {
+    margin: auto;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #2cae70;
+    border-color: #2cae70;
+}
+.pagination>li>a, .pagination>li>span, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    color: #2a783c;
+}
+
+.catalog__block-content .glyphicon-star {
+    color: #ff7f00;
+}
+
+.rating-md {
+    font-size: 13px!important;
+}
+
+
+
+.rating-container .filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #ff7f00 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-text-stroke: 1px #ff7f00 !important;
+    text-shadow: none !important;
+}
+
+.rating-container .rating-stars {
+    cursor: inherit !important;
+}
+
+.rating-container .empty-stars {
+    color: #999 !important;
+    font-size: 13px!important;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-text-stroke: 1px #999 !important;
+    text-shadow: none !important;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.dartc-empty-cart {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.pb-5 {
+    padding-bottom: 5px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.content__banner--404{background-image:url(../img/promo/promo-top-4.jpg)}
+
+@media only screen and (max-width: 321px) {
+    .content__banner--404 {
+        background-image: url("../img/promo/promo-top-4-320.jpg"); } }
+
+@media (max-width: 991px) {
+  .promo-code-enter {
+    margin: 0 auto 20px;
+  }
+  .create-checkout {
+    text-align: center !important;
+  }
+}
+.promo-code-clear-btn {
+  border-radius: 0 !important;
+}
+.promo-code-enter .form-control {
+  border-color: #999 !important;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.mfp-figure:after {
+  background: #fff;
+}
+
+.news__block-img img{
+    margin: 0 auto;
+}
+
+.menu__a1 {
+    color: black;
+}
+
+.header__cart-top .fas {
+    color: #2cae70;
+}

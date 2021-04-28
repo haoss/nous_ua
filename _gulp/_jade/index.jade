@@ -1,0 +1,145 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    .main-sliderTop
+      div
+        .main-sliderTop__block
+          .main-sliderTop__img
+            img(src="./img/main-slider/banner-1920x980-1.jpg", alt="")
+          .main-sliderTop__content
+            .main-slider__title Nous Optimum NS5008 Black 
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a(href="#!").btn.btn--border.btn--black.br30 Подробнее
+      div
+        .main-sliderTop__block
+          .main-sliderTop__img
+            img(src="./img/main-slider/banner-1920x980-2.jpg", alt="")
+          .main-sliderTop__content
+            .main-slider__title Nous Optimum NS5008 Black 
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a(href="#!").btn.btn--border.btn--black.br30 Подробнее
+      div
+        .main-sliderTop__block
+          .main-sliderTop__img
+            img(src="./img/main-slider/banner-1920x980-3.jpg", alt="")
+          .main-sliderTop__content
+            .main-slider__title Nous Optimum NS5008 Black 
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            a(href="#!").btn.btn--border.btn--black.br30 Подробнее
+
+    // Content
+    .content.no--p-top
+    
+      // Why
+      .section.why
+        .container
+          
+          .section__head
+            div 
+              .h1 Почему  NOUS?
+          
+          .advantages.advantages--why
+            div
+              .advantages__block
+                +iconAdvantages5
+                span Официальная гарантия 
+                  br
+                  | 2 года
+            div
+              .advantages__block
+                +iconAdvantages6
+                span Гарантийный 
+                  br
+                  | ремонт за 24 часа
+            div
+              .advantages__block
+                +iconAdvantages7
+                span.hidden-xxs Бесплатная доставка 
+                  br
+                  | по Украине
+                span.visible-xxs Бесплатная доставка
+            div
+              .advantages__block
+                +iconAdvantages8
+                span.hidden-xxs Европейская сертификация 
+                  br
+                  | продукции "CE"
+                span.visible-xxs Европейская сертификация 
+      
+      .main-category.no--p-bottom
+        .container
+          
+          .main-category__wrapper
+            .main-category__block.main-category__block--1
+              a(href="#!")
+                img(src="./img/main-category/category-1.png", alt="")
+            .main-category__block.main-category__block--2
+              a(href="#!")
+                img(src="./img/main-category/category-2.png", alt="")
+            .main-category__block.main-category__block--3
+              a(href="#!")
+                img(src="./img/main-category/category-3.png", alt="")
+        
+      .main-category.no--p-bottom
+        .container
+          
+          .section__head
+            div 
+              .h1 Новые поступления!
+                  
+          .main-category__wrapper
+            .main-category__block.main-category__block--4
+              a(href="#!")
+                img(src="./img/main-category/category-4.png", alt="")
+            .main-category__block.main-category__block--5
+              a(href="#!")
+                img(src="./img/main-category/category-5.png", alt="")
+            .main-category__block.main-category__block--6
+              a(href="#!")
+                img(src="./img/main-category/category-6.png", alt="")
+                  
+      .main-category
+        .container
+          
+          .section__head
+            div 
+              .h1 Лидеры продаж
+                  
+          .main-category__wrapper.main-category__wrapper--row
+            .main-category__block.main-category__block--7
+              a(href="#!")
+                img(src="./img/main-category/category-7.png", alt="")
+            .main-category__block.main-category__block--8
+              a(href="#!")
+                img(src="./img/main-category/category-8.png", alt="")
+
+      +subscriptionForm
+
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    

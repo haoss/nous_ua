@@ -1,0 +1,877 @@
+/*==========  Desktop First Method  ==========*/
+
+/* 1920 */
+@media only screen and (max-width : 1700px)
+  .menu__div2-wrapper
+    left: 0 !important
+
+@media only screen and (max-width : 1599px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1439px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .header
+    height: auto
+    background: $color-white !important
+    // box-shadow: none !important
+    position: fixed
+    &__logo
+      padding-top: 15px
+      padding-bottom: 0
+    &__cart
+      &-popup
+        top: 55px
+      &-top
+        // height: 55px
+        white-space: nowrap
+        margin-top: 20px
+        padding-right: 0
+        width: auto
+        float: right
+        margin-right: 30px
+        .fas
+          font-size: 17px
+          color: $color-green !important
+        span
+          background: #C4C4C4 !important
+          // position: inherit
+          display: inline-block
+          top: -5px
+          color: $primary-color
+          right: inherit
+          vertical-align: -5px
+          margin-left: 5px
+          overflow: hidden
+          width: 25px
+          height: 25px
+          line-height: 25px
+          &:empty
+            width: 1px
+    &__wrapper
+      &>div
+        &:first-child
+          order: 2
+        &:nth-child(2)
+          order: 1
+          width: 90px
+        &:last-child
+          order: 3
+          width: 90px
+    &__navigation
+      display: none
+    &__mobile
+      display: block !important
+    &-separator
+      display: none
+  .main
+    &-slider
+      height: 510px
+      &__img
+        margin-left: -75px
+      &__block
+        height: 510px
+        padding-top: 0
+        background-position: left bottom
+        .container
+          height: 510px
+      &Top
+        margin-top: -55px
+  .main-category
+    &__wrapper
+      height: 455px
+      &--row
+        height: 219px
+    &__block
+      width: 455px
+  .section
+    &__head
+      &>div
+        h1, .h1
+          font-size: 25px
+  .advantages
+    &--why
+      padding-left: 15px
+      padding-right: 15px
+      .advantages__block
+        font-size: 12px
+        height: auto
+        svg
+          width: 30px
+          height: 30px
+  .content
+    &__banner
+      min-height: 500px
+      &--banner
+        min-height: 260px
+        .content__banner-title
+          font-size: 20px
+  .loader
+    &__download
+      &-block
+        width: 290px
+  .single-product__gallery-big-block
+    height: 396px
+  .single-product__gallery-left::after, .single-product__gallery-left::before
+    height: 13px
+  body
+    padding-top: 55px
+  .catalog
+    &__block
+      transform: translateY(0) !important
+      &-th
+        display: none
+      &-img
+        &>img
+          &.img-first
+            opacity: 1
+          &.img-default
+            display: none
+          &.img-hover
+            display: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+
+  .h1, h1
+    font-size: 24px
+  .advantages
+    &__block
+      font-size: 12px
+      svg
+        width: 30px
+        height: 30px
+    &--why
+      .advantages__block
+        white-space: normal
+      &>div
+        &+div
+          padding-left: 15px
+  .main
+    &-slider
+      height: 400px
+      &__block
+        height: 400px
+        .container
+          height: 400px
+        p
+          display: none
+      &__img
+        width: 345px
+        margin-left: 0
+      &__title
+        font-size: 26px
+  .btn
+    &.br30
+      padding-left: 25px
+      padding-right: 25px
+  .main-category
+    &__wrapper
+      height: 345px
+      &--row
+        height: 167px
+    &__block
+      width: 345px
+  .section
+    &__head
+      &>div
+        padding: 0 10px
+        h1, .h1
+          font-size: 18px
+  .content
+    &__thumb
+      max-width: inherit
+      float: none
+      margin-right: 0
+    &__banner
+      min-height: 400px
+      &-title
+        font-size: 24px
+  .delivery__block
+    &-info
+      &-popup
+        left: inherit
+        right: 0
+        transform: translateX(0%) translateY(-35px)
+      &:hover
+        .delivery__block-info-popup
+          transform: translateX(0%) translateY(-25px)
+  .loader
+    &__model>div+div
+      width: 300px
+    &__download
+      &-block
+        margin-left: 0 !important
+        width: 100%
+  .catalog
+    &__wrapper
+      &>div
+        width: 50%
+  .single-product
+    &__gallery
+      padding-left: 65px
+      &-left
+        width: 53px
+    &__price
+      margin-bottom: 10px
+    &__1click
+      &-body
+        flex-direction: column
+      &-label
+        padding-right: 0
+        padding-bottom: 10px
+    &__table
+      padding-bottom: 15px
+      ul
+        margin-bottom: 0
+    &__quality
+      font-size: 12px
+      &-wrapper
+        flex-direction: column
+        &>div
+          &+div
+            padding-left: 0
+            border-left: 1px
+            padding-top: 5px
+  .btn
+    &--single-product
+      float: none
+      width: 100%
+  .single-product
+    &__desc
+      &-title
+        font-size: 17px
+      &-block
+        &:first-child
+          padding-top: 0
+        p
+          line-height: 20px
+    &__load
+      &>div
+        width: 50%
+  .popup-youtube
+    .fas
+      font-size: 26px
+  .cart
+    &__step
+      margin-bottom: 20px
+      display: flex
+      justify-content: space-between
+      &-block
+        padding-bottom: 0
+        span
+          text-transform: none
+          width: 80px
+        strong
+          margin-bottom: 10px
+        i
+          width: 50px
+          height: 2px
+          bottom: 50%
+          transform: translateY(-50%)
+          right: -156px
+          left: inherit
+          &::after
+            border-top: 6px solid transparent
+            border-bottom: 6px solid transparent
+            border-left: 13px solid #ddd
+            border-right: 0
+            left: inherit
+            right: 0
+            bottom: -5px
+        &:nth-child(2)
+          span
+            width: 100px
+    &__ordering
+      &-top, &-bottom
+        flex-direction: column
+        &>div
+          width: 100% !important
+          &+div
+            padding-left: 0
+  .single-product__gallery-left-block
+    height: 53px
+  .single-product__gallery-big-block
+    height: 366px
+  .menu
+    &__mobile
+      ul
+        max-width: 720px
+  .header__cart
+    &-popup
+      overflow-y: auto
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      width: auto !important
+    &-body
+      max-height: none
+    &-close
+      display: block
+    &-body
+      display: flex
+      align-items: center
+      flex-direction: column
+    &-row
+      width: 100%
+      max-width: 280px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .advantages
+    flex-wrap: wrap
+    &>div
+      width: 50%
+      &+div
+        padding-left: 0
+      &:last-child, &:nth-last-child(2)
+        padding-top: 15px
+    &--why
+      padding-top: 0
+      padding-bottom: 0
+      max-width: 480px
+      margin: 0 auto
+      background: none
+      .advantages__block
+        background: rgba($color-white,0.4)
+        height: 50px
+        float: none
+        padding-left: 5px
+        padding-right: 5px
+      &>div
+        flex-grow: 0
+        &+div
+          border-left: 0
+          padding-left: 0
+        &:first-child, &:nth-child(3)
+          padding-right: 15px
+        &:nth-child(2), &:last-child
+          padding-left: 15px
+        &:nth-child(3), &:last-child
+          padding-top: 15px
+  .why
+    padding-bottom: 30px
+    padding-top: 30px
+    background: radial-gradient(circle,rgba(255,255,255,0) 0,#d3d3d3 80%)
+  .footer
+    &__center
+      &>div
+        width: 100%
+        &:first-child, &:nth-child(2)
+          display: none
+    &__social
+      text-align: center
+    &__bottom
+      text-align: center
+      border-top: 0
+      padding-top: 0
+    &__copyright
+      float: none
+    &__development
+      float: none
+      padding-top: 15px
+    &-new
+      &__right, &__center
+        float: none
+        width: 100%
+      &__right
+        padding-top: 25px
+      &__center
+        overflow: hidden
+        dl
+          width: 100%
+          padding: 0 !important
+          float: none
+          dt
+            margin: 0
+        .toggle
+          .plus
+            display: inline-block
+          dd
+            overflow: hidden
+            height: 0
+            margin: 0
+            line-height: 31px
+            transform: translate(100%)
+            a
+              display: block
+              padding: 0
+            &:nth-of-type(1)
+              transition: .2s .1s
+            &:nth-of-type(2)
+              transition: .25s .15s
+            &:nth-of-type(3)
+              transition: .3s .2s
+            &:nth-of-type(4)
+              transition: .35s .25s
+            &:nth-of-type(5)
+              transition: .4s .3s
+            &:nth-of-type(6)
+              transition: .45s .35s
+            &:nth-of-type(7)
+              transition: .5s .4s
+            &:nth-of-type(8)
+              transition: .55s .45s
+            &:nth-of-type(9)
+              transition: .6s .5s
+            &:nth-of-type(10)
+              transition: .65s .55s
+          &.active
+            dt
+              .plus
+                transform: rotate(225deg)
+
+            dd
+              height: 31px
+              transform: translate(0)
+              a
+                transition: .4s
+                padding: 0 13px
+  .main
+    &-slider
+      height: 285px
+      &__block
+        height: 285px
+        .container
+          height: 285px
+          max-width: 480px
+      &__img
+        width: 240px
+        margin-left: -15px
+      &__title
+        font-size: 17px
+      &__content
+        padding-left: 0
+      .slick-dots
+        bottom: 15px
+      &Top
+        &__img
+          float: left
+          width: 100%
+          img
+            width: 240%
+            float: left
+            transform: translateX(-10%)
+        &__content
+          position: relative
+          transform: translateY(0)
+          top: inherit
+          text-align: center
+          padding: 15px 15px 65px 15px
+          left: inherit
+          p
+            max-width: none
+  .main-category
+    &>.container
+      max-width: 480px
+    &__wrapper
+      height: auto
+    &__block
+      width: 100%
+      position: inherit
+      &:not(:last-child)
+        margin-bottom: 20px
+  .subscription
+    &__wrapper
+      height: 130px
+    &__body
+      flex-direction: column
+      align-items: flex-start
+    &__label
+      margin-bottom: 10px
+  .menu__mobile
+    ul
+      max-width: none
+      width: calc(100% - 30px)
+    ul li>ul>li>a
+      font-size: 14px
+  .shared
+    flex-direction: column
+    &__label
+      padding-right: 0
+      padding-bottom: 10px
+    &>div
+      &+div
+        padding-left: 0
+  .content
+    &__banner
+      margin-bottom: 20px
+      min-height: 300px
+      &--catalog, &--banner
+        background-size: auto 100%
+        background-position: 41% 100%
+  .tab
+    &-nav li a
+      padding: 10px
+    &-content
+      padding: 10px
+  .loader__model
+    flex-direction: column
+    max-width: 480px
+    &>div
+      &:first-child
+        order: 2
+      &:last-child
+        order: 1
+        width: 100%
+        padding-left: 0
+  .single-product
+    &__top
+      display: block
+      &>div
+        width: 100%
+        &+div
+    &__gallery
+      padding-left: 0
+      margin-bottom: 15px
+      &-left
+        display: none
+      .slick-dots
+        li
+          margin: 0
+    &__table
+      float: left
+      width: 50%
+    &__quality
+      float: right
+      width: calc(50% - 30px)
+      border: 0
+      padding: 0
+    &__desc
+      &-block
+        display: block
+        +clearfix
+        &>div
+          padding: 0 !important
+          margin: 0
+          width: 100%
+        img
+          margin-right: -10px
+          margin-top: 0
+        &--reverse
+          img
+            margin-left: -10px
+            margin-right: 0
+        &:last-child
+          margin-bottom: -10px
+        &--right
+          display: flex
+          flex-direction: column
+          &:last-child
+            margin-bottom: 5px
+          &>div
+            &:first-child
+              order: 2
+              p
+                &:last-child
+                  margin-bottom: 0
+            &:last-child
+              padding-bottom: 15px !important
+              order: 1
+              img
+                margin-right: 0
+        &--left
+          display: flex
+          flex-direction: column
+          &:last-child
+            margin-bottom: 50px
+          &>div
+            &:first-child
+              order: 1
+              img
+                margin-right: 0
+                padding-bottom: 15px
+            &:last-child
+              order: 2
+              p
+                &:last-child
+                  margin-bottom: 0
+    &__tab
+      .nav
+        overflow: scroll
+        li
+          flex-shrink: 0
+          a
+            padding: 0 10px
+            height: 40px
+            line-height: 40px
+    &__load
+      &>div
+        width: 100%
+  .cart
+    &__step
+      max-width: 290px
+      margin-left: auto
+      margin-right: auto
+      &-block
+        strong
+          width: 25px
+          height: 25px
+          line-height: 23px
+          font-size: 12px
+        span
+          font-size: 12px
+        i
+          width: 30px
+          right: -24px
+          height: 1px
+          bottom: inherit
+          top: 13px
+          transform: none
+          &::after
+            border-top-width: 4px
+            border-bottom-width: 3px
+            border-left-width: 8px
+            bottom: -3px
+    .td-2
+      vertical-align: top !important
+    &__name
+      margin-bottom: 10px
+      display: inline-block
+    &__price
+      margin-bottom: 10px
+    &__number
+      margin-left: 0
+      margin-bottom: 10px
+    &__img
+      img
+        width: 44px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 599px)
+  .catalog
+    &__wrapper
+      margin: 0 -10px
+      &>div
+        padding: 0 5px
+    &__block
+      min-height: inherit
+      &-content
+        padding-left: 5px
+        padding-right: 5px
+      &-img
+        height: 180px
+      .btn
+        .fas
+          display: none
+      &-price
+        del
+          &+strong
+            margin-left: 10px
+  .cart
+    &__table
+      margin-left: -21px
+      margin-right: -21px
+    &__total
+      margin-left: -21px
+      margin-right: -21px
+      text-align: center
+      strong
+        padding-left: 10px
+        padding-right: 10px
+  .loader
+    &__download
+      &-block
+        padding-right: 20px
+
+@media only screen and (max-width : 479px)
+  .visible-xxs
+    display: block !important
+  .hidden-xxs
+    display: none !important
+  .advantages
+    &__block
+      flex-direction: column
+      text-align: center
+      white-space: normal
+      max-width: 130px
+      background: $color-white
+      padding: 10px 5px
+      height: 100px
+      svg
+        margin-bottom: 5px
+        margin-right: 0
+      span
+        line-height: 16px
+      br
+        display: none
+    &>div
+      &:first-child, &:nth-child(3)
+        padding-right: 15px
+        .advantages__block
+          float: right
+      &:nth-child(2), &:last-child
+        padding-left: 15px
+      &:nth-child(3), &:last-child
+        padding-top: 15px
+    &--why
+      .advantages__block
+        height: 86px
+  .footer
+    &__top
+      padding: 10px 0
+  .main
+    &-slider
+      height: 190px
+      &__block
+        font-size: 12px
+        height: 190px
+        .container
+          height: 190px
+          max-width: 320px
+        p
+          display: none
+        .btn
+          height: 35px
+          line-height: 30px
+      &__img
+        width: 163px
+        margin-left: -30px
+      &__title
+        // font-size: 14px
+      // &__content
+      //   left: calc(50% - 40px)
+      &__title
+        margin-bottom: 15px
+      &Top
+        &__img
+          img
+            width: 225%
+  .main-category
+    padding: 25px 0
+    &__block
+      &:not(:last-child)
+        margin-bottom: 10px
+  .section
+    &__head
+      margin-bottom: 20px
+  .subscription
+    &__input
+      width: 244px
+  .header
+    &__cart
+      &-popup
+        width: 290px
+      &-img
+        img
+          max-width: 60px
+      &-delete
+        right: -5px
+        top: -5px
+      &-footer
+        text-align: center
+        .btn
+          float: none !important
+          height: auto
+          line-height: inherit
+          border: 0
+          &+.btn
+            margin-top: 10px
+  .content
+    &__banner
+      min-height: 150px
+      padding: 25px 0
+      &-title
+        font-size: 17px
+      &--banner
+        background-size: cover
+        text-align: left !important
+      &--catalog
+        min-height: 150px !important
+        .content__banner-title
+          font-size: 17px
+  .single-product
+    &__availability
+      float: none
+      margin-bottom: 10px
+    &__rating
+      float: none
+    &__head
+      h1, .h1
+        font-size: 17px
+    &__1click-body
+      align-items: flex-start
+    &__table
+      float: none
+      width: 100%
+    &__quality
+      float: none
+      width: 100%
+      padding: 10px 0
+      border-top: 1px solid #eee
+      border-bottom: 1px solid #eee
+  .col-xxs-12
+    width: 100% !important
+  .catalog
+    &__block
+      &-name
+        font-size: 14px
+        height: 39px
+      &-price
+        position: relative
+        &>*
+          display: block
+          width: 100%
+        del
+          font-size: 14px
+          position: absolute
+          margin-top: 20px
+          &+strong
+            margin-left: 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 321px)
+  .content
+    &__banner
+      &--404
+        min-height: 300px
+        background:
+          image: url('../img/promo/promo-top-4-320.jpg')
+  .main
+    &-slider
+      &Top
+        &__img
+          img
+            width: 200%
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .container
+    width: 750px
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  .container
+    width: 970px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .container
+    width: 1170px
+
+/* 1440 */
+@media only screen and (min-width : 1440px)
+  /**/
+
+@media only screen and (max-width : 1600px)
+  /**/
+
+/* 1920 */
+@media only screen and (min-width : 1920px)
+  /**/

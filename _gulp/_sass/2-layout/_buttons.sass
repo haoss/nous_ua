@@ -1,0 +1,84 @@
+/* buttons */
+
+.btn
+  display: inline-block
+  padding: 0 15px
+  margin-bottom: 0
+  font-size: 15px
+  font-weight: 500
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  touch-action: manipulation
+  cursor: pointer
+  user-select: none
+  background:
+    image: none
+    color: $color-gray
+  border: 1px solid $color-white
+  border-radius: 5px
+  height: 40px
+  line-height: 36px
+  text-decoration: none
+  transition: all 0.35s
+
+  &:hover, &:focus, &:active
+    outline: none
+
+  &--default
+    color: #333
+    background-color: $color-white
+    border-color: $color-gray
+
+  &--border
+    background: transparent
+    border-color: $color-999
+    color: $primary-color
+    &:hover, &:focus
+      background: $color-green
+      color: $color-white
+      border-color: $color-green
+
+  &--black
+    color: $color-black
+    border-color: $color-black
+    &:hover, &:focus
+      background: $color-black
+      color: $color-white
+
+  &--green
+    color: $color-white
+    border-color: #25925e
+    background: #25925e
+    &:hover, &:focus
+      background: #2cae70
+      border-color: #2cae70
+      color: $color-white
+
+  &--orange
+    color: $color-white
+    border-color: #ffae00
+    background: #ffae00
+    &:hover, &:focus
+      background: #ff9600
+      border-color: #ff9600
+      color: $color-white
+
+  &.br30
+    border-radius: 30px
+    padding-left: 30px
+    padding-right: 30px
+
+  .fa-long-arrow-alt-left, .fa-shopping-cart
+    margin-right: 5px
+
+  &--single-product
+    height: 40px
+    min-width: 190px
+    font-size: 15px
+    float: right
+
+  &--circle
+    border-radius: 50%
+    padding: 0 10px
+    min-width: 41px

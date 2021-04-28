@@ -1,0 +1,189 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Каталог' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Каталог' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .content__banner.content__banner--catalog(style="background-image: url('./img/catalog/catalog-head-xiaomi.jpg')")
+        .container
+          div
+            .content__banner-title Смартфоны Xiaomi
+      .container
+        .content__wrapper 
+        
+          .catalog
+            .catalog__wrapper
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+                    
+            .text-center
+              //- a(href="#!").btn.btn--border Смотреть всё товары 
+              //-   i.fas.fa-angle-right
+              //- .clear10
+              a(href="#!").btn.btn--border.btn--circle
+                i.fas.fa-plus
+                  
+      .content__banner.content__banner--catalog.no--m-top(style="background-image: url('./img/catalog/catalog-head-1.jpg')")
+        .container
+          div
+            .content__banner-title Смартфоны
+      .container
+        .content__wrapper 
+        
+          .catalog
+            .catalog__wrapper
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+                    
+            .text-center
+              //- a(href="#!").btn.btn--border Смотреть всё товары 
+              //-   i.fas.fa-angle-right
+              //- .clear10
+              a(href="#!").btn.btn--border.btn--circle
+                i.fas.fa-plus
+        
+      .content__banner.content__banner--catalog(style="background-image: url('./img/catalog/catalog-head-2.jpg')").no--m-top
+        .container
+          div
+            .content__banner-title Защищенные телефоны
+      .container
+        .content__wrapper
+          
+          .catalog
+            .catalog__wrapper
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+                    
+            .text-center
+              a(href="#!").btn.btn--border Смотреть всё товары 
+                i.fas.fa-angle-right
+              //- .clear10
+              //- a(href="#!").btn.btn--border.btn--circle
+              //-   i.fas.fa-plus
+        
+      .content__banner.content__banner--catalog(style="background-image: url('./img/catalog/catalog-head-3.jpg')").no--m-top
+        .container
+          div
+            .content__banner-title Телефоны с функцией SOS
+      .container
+        .content__wrapper
+          
+          .catalog
+            .catalog__wrapper
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+                    
+            .text-center
+              //- a(href="#!").btn.btn--border Смотреть всё товары 
+              //-   i.fas.fa-angle-right
+              //- .clear10
+              a(href="#!").btn.btn--border.btn--circle
+                i.fas.fa-plus
+        
+      .content__banner.content__banner--catalog(style="background-image: url('./img/catalog/catalog-head-4.jpg')").no--m-top
+        .container
+          div
+            .content__banner-title Аксессуары
+      .container
+        .content__wrapper
+          
+          .catalog
+            .catalog__wrapper
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+                    
+            .text-center
+              //- a(href="#!").btn.btn--border Смотреть всё товары 
+              //-   i.fas.fa-angle-right
+              //- .clear10
+              a(href="#!").btn.btn--border.btn--circle
+                i.fas.fa-plus
+        
+      .content__banner.content__banner--catalog(style="background-image: url('./img/catalog/catalog-head-5.jpg')").no--m-top
+        .container
+          div
+            .content__banner-title Запасные части
+      .container
+        .content__wrapper
+          
+          .catalog
+            .catalog__wrapper
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+              div
+                +catalogBlock1
+              div
+                +catalogBlock2
+                    
+            .text-center
+              //- a(href="#!").btn.btn--border Смотреть всё товары 
+              //-   i.fas.fa-angle-right
+              //- .clear10
+              a(href="#!").btn.btn--border.btn--circle
+                i.fas.fa-plus
+
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

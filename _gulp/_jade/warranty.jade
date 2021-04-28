@@ -1,0 +1,112 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Гарантийные условия' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Гарантийные условия' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .container
+        
+        .content__wrapper
+          h1 Гарантийные условия
+          
+          .row
+            .col-md-4
+              ul.nav.tab-nav(role='tablist')
+                li.active(role='presentation')
+                  a(href='#tab1', aria-controls='tab1', role='tab', data-toggle='tab') Название модели 1
+                li(role='presentation')
+                  a(href='#tab2', aria-controls='tab2', role='tab', data-toggle='tab') Название модели 2
+                li(role='presentation')
+                  a(href='#tab3', aria-controls='tab3', role='tab', data-toggle='tab') Название модели 3
+                li(role='presentation')
+                  a(href='#tab4', aria-controls='tab4', role='tab', data-toggle='tab') Название модели 4
+                li(role='presentation')
+                  a(href='#tab5', aria-controls='tab5', role='tab', data-toggle='tab') Название модели 5
+
+              
+            .col-md-8
+              .tab-content
+                #tab1.tab-pane.active(role='tabpanel')
+                  
+                  .h3 Название таблицы
+                  
+                  .warranty-table.table-responsive
+                    table.table.table-bordered
+                      thead
+                        tr
+                          th(align="center" valign="center" nowrap) Номер
+                          th(align="center" valign="center" nowrap) Гарантийный срок
+                          th(align="center" valign="center" nowrap) Гарантийное 
+                            br
+                            | обслуживание
+                          th(align="center" valign="center" nowrap) Гарантийный 
+                            br
+                            | документ поддержки
+                      tbody
+                        tr
+                          td(align="center" valign="center") Наименование
+                          td(align="center" valign="center") 1 год
+                          td(align="center" valign="center") В авторизованном сервисном центре
+                          td(align="center" valign="center") Заказ номер. 
+                            br
+                            | 12121212
+                        tr
+                          td(align="center" valign="center") Наименование
+                          td(align="center" valign="center") 1 год
+                          td(align="center" valign="center") В авторизованном сервисном центре
+                          td(align="center" valign="center") Заказ номер. 
+                            br
+                            | 12121212
+                  
+                  p
+                    .h3
+                      strong 1. Что такое гарантийный период?
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  p
+                    .h3
+                      strong 2. Какие документы мне нужно выполнять в рамках этого процесса?
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  p
+                    .h3
+                      strong 3. Получение гарантийных услуг?
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    
+                  
+                #tab2.tab-pane(role='tabpanel') 2
+                #tab3.tab-pane(role='tabpanel') 3
+                #tab4.tab-pane(role='tabpanel') 4
+                #tab5.tab-pane(role='tabpanel') 5
+
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

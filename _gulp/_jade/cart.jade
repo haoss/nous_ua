@@ -1,0 +1,158 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Корзина' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Корзина' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .container
+        
+        .content__wrapper
+          
+          .cart
+            .row
+              .col-md-2
+                
+                .cart__step
+                  .cart__step-block.is-active
+                    strong 01
+                    span Моя корзина 
+                    i
+                  .cart__step-block
+                    strong 02
+                    span Оформление покупки
+                    i
+                  .cart__step-block
+                    strong 03
+                    span Заказ оформлен
+                  
+                
+              .col-md-10
+                
+                .cart__body
+                  .h1 Моя корзина
+                  
+                  .cart__table
+                    table.table.table-bordered
+                      thead
+                        tr
+                          th(colspan="2") Товар
+                          th(align="center").hidden-xs Цена, грн
+                          th(align="center").hidden-xs Количество
+                          th(align="center").hidden-xs Итог, грн
+                          th(width="1") &nbsp;
+                      tbody
+                        tr
+                          td(width="1").td-1
+                            a(href="#!").cart__img
+                              img(src="./img/catalog/catalog-1.png", alt="")
+                          td(valign="center").td-2
+                            a(href="#!").cart__name Nous Optimum NS2414
+                            .visible-xs
+                              .row
+                                .col-xs-6.col-xxs-12
+                                  .cart__price
+                                    .cart__price-label Цена:
+                                    span 1 699
+                                    small грн.
+                                .col-xs-6.col-xxs-12
+                                  .cart__number-label Количество:
+                                  .cart__number
+                                    button.cart__number-minus(type="button")
+                                      i.fa.fa-minus
+                                    input(type="text" value="1").cart__number-input
+                                    button.cart__number-plus(type="button")
+                                      i.fa.fa-plus
+                          td(align="center" valign="center").td-3.hidden-xs
+                            .cart__price 1 699
+                          td(align="center" valign="center").td-4.hidden-xs
+                            .cart__number
+                              button.cart__number-minus(type="button")
+                                i.fa.fa-minus
+                              input(type="text" value="1").cart__number-input
+                              button.cart__number-plus(type="button")
+                                i.fa.fa-plus
+
+                          td(align="center" valign="center").td-5.hidden-xs
+                            .cart__price 1 699
+                          td(width="1" valign="center").td-6
+                            a(href="#!").cart__delete
+                              i.fas.fa-trash-alt
+                        tr
+                          td(width="1").td-1
+                            a(href="#!").cart__img
+                              img(src="./img/catalog/catalog-1.png", alt="")
+                          td(valign="center").td-2
+                            a(href="#!").cart__name Nous Optimum NS2414
+                            
+                            .visible-xs
+                              .row
+                                .col-xs-6.col-xxs-12
+                                  .cart__price
+                                    .cart__price-label Цена:
+                                    span 1 699
+                                    small грн.
+                                .col-xs-6.col-xxs-12
+                                  .cart__number-label Количество:
+                                  .cart__number
+                                    button.cart__number-minus(type="button")
+                                      i.fa.fa-minus
+                                    input(type="text" value="1").cart__number-input
+                                    button.cart__number-plus(type="button")
+                                      i.fa.fa-plus
+                            
+                          td(align="center" valign="center").td-3.hidden-xs
+                            .cart__price 1 699
+                          td(align="center" valign="center").td-4.hidden-xs
+                            .cart__number
+                              button.cart__number-minus(type="button")
+                                i.fa.fa-minus
+                              input(type="text" value="1").cart__number-input
+                              button.cart__number-plus(type="button")
+                                i.fa.fa-plus
+
+                          td(align="center" valign="center").td-5.hidden-xs
+                            .cart__price 1 699
+                          td(width="1" valign="center").td-6
+                            a(href="#!").cart__delete
+                              i.fas.fa-trash-alt
+                  
+                  .cart__total
+                    span Итого к оплате:
+                    strong 3 398
+                  
+                  .text-center
+                    button(type="button").btn.btn--border Оформить покупку
+          
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

@@ -1,0 +1,104 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Контакты' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Контакты' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .content__banner
+        img(src="./img/promo/promo-top-3.jpg", alt="").img-responsive
+          
+      .container
+        
+        .content__wrapper
+          .row
+            .col-md-8
+              .h1 Контакты
+              p Пожалуйста, свяжитесь с нами по любым вопросам, которые у вас есть, и мы постараемся ответить в течении короткого времени.
+              
+              .row
+                .col-sm-6
+                  .contact__info-block
+                    .contact__info-block-title 
+                      i.fas.fa-phone-volume
+                      | Позвоните нам:
+                    p +380 (099) 987 456 32
+                      br
+                      | +380 (099) 987 456 32 
+                      small - отдель продаж
+                      br
+                      | +380 (099) 987 456 32 
+                      small - сервисный центр
+                      br
+                      | +380 (099) 987 456 32 
+                      small - отдель продаж
+                    
+                .col-sm-6
+                  .contact__info-block
+                    .contact__info-block-title 
+                      i.fas.fa-map-marker-alt
+                      | Адрес:
+                    p Харьков, Ул. Харьковская 11
+                  .contact__info-block
+                    .contact__info-block-title 
+                      i.fas.fa-clock
+                      | Время работы:
+                    p
+                      strong Пн-Пт 
+                      | 9:00 - 18:00, 
+                      strong Сб, Вс 
+                      | 10:00 - 17:00
+              
+            .col-md-4
+              .contact__block
+                form(action="#")
+                  fieldset
+                    legend Обратная связь
+                    .form-group.has-error
+                      label.hidden Введите Имя
+                      input(type="text" placeholder="Введите Имя").form-control
+                    .form-group
+                      label.hidden Введите Email
+                      input(type="text" placeholder="Введите Email").form-control
+                    .form-group
+                      label.hidden Телефон
+                      input(type="text" placeholder="+38 (___) ___ __ __").form-control.phone-mask
+                    .form-group
+                      label.hidden Сообщение
+                      textarea.form-control(placeholder="Ваш комментарий")
+                    
+                    button(type="button").btn.btn--green Отправить
+                      
+              
+              
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

@@ -1,0 +1,142 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Загрузки' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Загрузки' + ' - Nous' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header-inside
+    
+    .header-separator
+
+    // Content
+    .content
+      .content__banner.content__banner--banner(style="background-image: url('./img/catalog/download.jpg')")
+        .container
+          .row
+            .col-md-5.col-sm-6
+              .content__banner-title Lorem ipsum dolor sit amet, consectetur adipiscing 
+          
+      .container
+        
+        .content__wrapper
+          
+          .loader__model
+            div
+              .loader__model-img
+                img(src="./img/loader/loader-img-1.png", alt="")
+            div
+              .h2 Выберите устройство
+              select.selectric
+                option(disabled) Категория
+                option Смартфоны 1
+                option Смартфоны 2
+                option Смартфоны 3
+                option Смартфоны 4
+                option Смартфоны 5
+              select.selectric
+                option(disabled) Модель
+                option Модель 1
+                option Модель 2
+                option Модель 3
+                option Модель 4
+                option Модель 5
+                option Модель 6
+          
+          .row
+            .col-md-8
+              .h2 Ответы на часто задаваемые вопросы
+              
+              #accordion.panel-group(role='tablist', aria-multiselectable='true')
+                .panel.panel-default
+                  #headingOne.panel-heading(role='tab')
+                    h4.panel-title
+                      a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                        i.fas.fa-chevron-down
+                        | Как сделать сброс к заводским настройкам?
+                  #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                    .panel-body
+                      | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .panel.panel-default
+                  #headingTwo.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                        i.fas.fa-chevron-down
+                        | Где мне найти прошивку?
+                  #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                    .panel-body
+                      | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .panel.panel-default
+                  #headingThree.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                        i.fas.fa-chevron-down
+                        | Где мне найти прошивку?
+                  #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                    .panel-body
+                      | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .panel.panel-default
+                  #headingFour.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                        i.fas.fa-chevron-down
+                        | Где мне найти прошивку?
+                  #collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
+                    .panel-body
+                      | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                .panel.panel-default
+                  #headingFive.panel-heading(role='tab')
+                    h4.panel-title
+                      a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                        i.fas.fa-chevron-down
+                        | Где мне найти прошивку?
+                  #collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
+                    .panel-body
+                      | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+              
+            .col-md-4
+              .contact__block
+                form(action="#")
+                  fieldset
+                    legend Обратная связь
+                    .form-group
+                      label.hidden Введите Имя
+                      input(type="text" placeholder="Введите Имя").form-control
+                    .form-group
+                      label.hidden Введите Email
+                      input(type="text" placeholder="Введите Email").form-control
+                    .form-group
+                      label.hidden Телефон
+                      input(type="text" placeholder="+38 (___) ___ __ __").form-control.phone-mask
+                    .form-group
+                      label.hidden Сообщение
+                      textarea.form-control(placeholder="Введите Имя")
+                    
+                    button(type="button").btn.btn--green Отправить
+
+      +subscriptionForm
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    //- script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    
+
+  

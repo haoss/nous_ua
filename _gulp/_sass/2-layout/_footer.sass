@@ -1,0 +1,156 @@
+/* footer */
+.footer
+  background: $color-gray
+  font-size: 14px
+  flex-shrink: 0
+  &__bottom
+    border-top: 1px solid #c5c5c5
+    padding: 18px 0
+    +clearfix
+  &__development
+    float: right
+    a
+      color: $primary-color
+  &__copyright
+    float: left
+  &__logo
+    svg
+      display: block
+      width: 121px
+      height: 35px
+      path
+        fill: #444
+  &__social
+    a
+      display: inline-block
+      text-decoration: none
+      &+a
+        margin-left: 20px
+      &:hover
+        i
+          background: $color-green
+          border-color: $color-green
+          color: $color-white
+    i
+      display: inline-block
+      height: 30px
+      line-height: 30px
+      width: 30px
+      border-radius: 30px
+      border: 1px solid #666666
+      color: #666666
+      text-align: center
+      font-size: 14px
+      background: none
+      transition: all 0.35s
+  &__center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 0
+    border-top: 1px solid #c5c5c5
+  &__top
+    padding: 15px 0 20px 0
+    margin-bottom: 25px
+    // border-bottom: 1px solid #c5c5c5
+  &__navigation
+    font-family: $font-exo2-l
+    font-size: 16px
+    text-align: center
+    ul
+      margin: 0
+      padding: 0
+      white-space: nowrap
+      +clearfix
+      li
+        margin: 0
+        float: left
+        color: #999
+        a, span
+          display: inline-block
+          color: $primary-color
+          text-decoration: none
+        &+li
+          margin-left: 55px
+        a
+          &:hover
+            color: $color-green
+  padding-top: 25px
+  padding-bottom: 25px
+  &-new
+    display: table
+    width: 100%
+    &__center
+      float: left
+      width: 75%
+      +clearfix
+      dl
+        float: left
+        width: 33.3%
+        margin: 0
+        &:nth-child(2), &:nth-last-child(1)
+          padding-left: 15px
+        dt
+          font-size: 14px
+          font-family: $font-roboto-b
+          font-weight: 400
+          padding: 10px 13px
+          line-height: 16px
+          border-bottom: 1px solid #C5C5C5
+          margin-bottom: 20px
+          .plus
+            display: none
+            float: right
+            position: relative
+            width: 14px
+            height: 14px
+            overflow: hidden
+            margin-top: 1px
+            transition: .5s
+
+            &::after, &::before
+              content: ""
+              position: absolute
+              height: 2px
+              width: 100%
+              top: 50%
+              left: 0
+              margin-top: -1px
+              background: $primary-color
+            &::after
+              transform: rotate(90deg)
+        dd
+          font-size: 12px
+          margin-bottom: 5px
+          display: block
+          &:last-child
+            margin-bottom: 0
+          a
+            color: #828282
+            text-decoration: none
+            display: inline-block
+            padding: 0 13px
+            transition: .2s
+            &:hover
+              color: $color-green
+    &__right
+      float: right
+      width: 25%
+      text-align: center
+    .footer__logo
+      margin-bottom: 36px
+      svg
+        width: 114px
+        height: 32px
+        margin: 0 auto
+    .footer__social
+      margin-bottom: 30px
+    .footer__copyright, .footer__development
+      text-align: center
+      font-size: 12px
+      float: none
+    .footer__development
+      margin-top: 14px
+      color: #979797
+      a
+        color: #979797

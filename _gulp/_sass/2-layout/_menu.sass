@@ -1,0 +1,238 @@
+/* menu */
+[role="navigation"]
+  ul
+    margin: 0
+    padding: 0
+    li
+        list-style: none
+        margin: 0
+
+.menu
+  &__ul
+    &1
+      font-family: $font-exo2-r
+      font-size: 16px
+      padding: 0
+      margin: 0
+      +clearfix
+    &2
+      width: 293px
+      padding: 0 30px 0 0
+      margin: 0
+  &__li
+    &1
+      margin: 0
+      list-style: none
+      float: left
+      &+li
+        margin-left: 45px
+      &.active, &.is-active
+        .menu__a1
+          color: $primary-color
+      &:hover
+        // &>.menu__div2
+        //   opacity: 1
+        //   visibility: visible
+    &2
+      list-style: none
+      margin: 0
+      &:not(:last-child)
+        margin-bottom: 20px
+      &.active
+        &>.menu__a2
+          color: $color-green
+  &__a
+    &1
+      text-decoration: none
+      color: $color-white
+      height: 95px
+      line-height: 86px
+      display: block
+      &:hover, &:focus
+        color: $primary-color
+      .fas
+        font-size: 11px
+        display: inline-block
+        margin-left: 5px
+        &::before
+          content: "\f078"
+    &2
+      font-size: 15px
+      text-decoration: none
+      color: $primary-color
+      font-family: $font-roboto-m
+
+  &__div
+    &2
+      display: none
+      position: absolute
+      left: 0
+      right: 0
+      top: 95px
+      background: $color-white
+      min-height: 292px
+      border-top: 1px solid $color-green
+      box-shadow: 0 5px 7px rgba($color-ccc,0.6)
+      transition: all 0.35s
+      // transition-delay: 0.15s
+      &-wrapper
+        max-width: 456px
+        margin: 0 auto
+        padding-left: 43px
+        padding-top: 40px
+        position: relative
+        img
+          width: 360px
+          height: 211px
+          position: absolute
+          top: 40px
+          // background: pink
+          margin-left: 293px
+      &.is-open
+        display: block
+
+      &--2
+        .menu__div2-wrapper
+          left: 220px
+      &--3
+        .menu__div2-wrapper
+          left: 370px
+  &__mobile
+    background: $color-green
+    opacity: 0
+    visibility: hidden
+    font-size: 16px
+    position: fixed
+    top: 55px
+    bottom: 100%
+    margin: 0
+    padding: 23px 0
+    left: 0
+    right: 0
+    overflow-y: scroll
+    transition: 0.6s
+    &-wrapper
+      overflow: hidden
+    ul
+      // background: $color-white
+      padding: 0
+      margin: 0 auto
+      max-width: 940px
+      padding: 0
+      li
+        margin: 0
+        opacity: 0
+        list-style: none
+        position: relative
+        transform: scale(1.5) translate(3rem,-2rem)
+        &:nth-of-type(2)
+          transform: scale(1.55) translate(3.5rem,-2.3rem)
+        &:nth-of-type(3)
+          transform: scale(1.6) translate(4rem,-2.6rem)
+        &:nth-of-type(4)
+          transform: scale(1.65) translate(4.5rem,-2.9rem)
+        &:nth-of-type(5)
+          transform: scale(1.7) translate(5rem,-3.2rem)
+        &:nth-of-type(6)
+          transform: scale(1.75) translate(5.5rem,-3.5rem)
+        &:nth-of-type(7)
+          transform: scale(1.8) translate(6rem,-3.8rem)
+        &:nth-of-type(8)
+          transform: scale(1.85) translate(6.5rem,-4.1rem)
+        &:nth-of-type(9)
+          transform: scale(1.9) translate(7rem,-4.4rem)
+        &:nth-of-type(10)
+          transform: scale(1.95) translate(7.5rem,-4.7rem)
+        &:nth-of-type(11)
+          transform: scale(2) translate(8rem,-5rem)
+        &:nth-of-type(12)
+          transform: scale(2.05) translate(8.5rem,-5.3rem)
+        &:nth-of-type(13)
+          transform: scale(2.1) translate(9rem,-5.6rem)
+        &:nth-of-type(14)
+          transform: scale(2.15) translate(9.5rem,-5.9rem)
+        &:nth-of-type(15)
+          transform: scale(2.2) translate(10rem,-6.2rem)
+        &:nth-of-type(16)
+          transform: scale(2.25) translate(10.5rem,-6.6rem)
+        &:nth-of-type(17)
+          transform: scale(2.3) translate(11rem,-6.9rem)
+        &>ul
+          display: none
+          &>li
+            &>a
+              padding-left: 35px
+              font-family: $font-roboto-r
+        &>a
+          display: block
+          // min-height: 30px
+          // border-bottom: 1px solid #eee
+          font-size: 16px
+          font-family: $font-roboto-r
+          padding: 0
+          color: $color-white
+          text-decoration: none
+          line-height: 30px
+          padding: 0 22px
+        &>i
+          display: block
+          position: absolute
+          right: 30px
+          top: 0px
+          height: 32px
+          line-height: 32px
+          z-index: 10
+          background: $color-white
+          font-style: normal
+          padding: 0 5px
+          z-index: 5
+          &::before
+            content: "\f0fe"
+            font-family: "Font Awesome 5 Free"
+        &.active
+          &>a
+            color: $color-green
+        &.is-active
+          &>i
+            &::before
+              content: "\f146"
+    &.is-active
+      bottom: 0
+      opacity: 1
+      visibility: visible
+      li
+        transition: .5s 0s
+        opacity: 1
+        transform: scale(1) !important
+        &:nth-of-type(2)
+          transition: .5s .1s
+        &:nth-of-type(3)
+          transition: .5s .12s
+        &:nth-of-type(4)
+          transition: .5s .15s
+        &:nth-of-type(5)
+          transition: .5s .19s
+        &:nth-of-type(6)
+          transition: .5s .25s
+        &:nth-of-type(7)
+          transition: .5s .32s
+        &:nth-of-type(8)
+          transition: .5s .4s
+        &:nth-of-type(9)
+          transition: .5s .49s
+        &:nth-of-type(10)
+          transition: .5s .59s
+        &:nth-of-type(11)
+          transition: .5s .7s
+        &:nth-of-type(12)
+          transition: .5s .82s
+        &:nth-of-type(13)
+          transition: .5s .91s
+        &:nth-of-type(14)
+          transition: .5s 1s
+        &:nth-of-type(15)
+          transition: .5s 1.12s
+        &:nth-of-type(16)
+          transition: .5s 1.15s
+        &:nth-of-type(17)
+          transition: .5s 1.19s
